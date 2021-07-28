@@ -1,0 +1,22 @@
+.container {
+  border-bottom: thin solid black;
+  width: 100%;
+}
+
+.noPadding {
+  margin: 0;
+}
+
+.navbar-ul {
+  margin: 0;
+  padding: 0;
+}
+
+.buttonItem {
+  border: none;
+  background: none;
+}
+
+.activeLink {
+  font-weight: bolder;
+}

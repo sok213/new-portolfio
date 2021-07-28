@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import s from './App.module.scss';
+import NavBar from './Comps/NavBar/NavBar';
+import Bio from './Comps/Bio/Bio';
+import Contact from './Comps/Contact/Contact';
+import Projects from './Comps/Projects/Projects';
+import Skills from './Comps/Skills/Skills';
+import { render } from '@testing-library/react';
 
 function App() {
+
+  // Define state for active tab. Display page contents depending on
+  // what tab is active.
+  const [activePage, setActivePage] = useState('Bio');
+
+  function renderActivePage() {
+    if(activePage === 'Bio') {
+      return <Bio />
+    } else if(activePage === 'Skills') {
+      return <Skills />
+    } else if(activePage === 'Projects') {
+      return <Projects />
+    } else if(activePage === 'Contact') {
+      return <Contact />
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={s.mainContainer}>
+      {/* Renders the NavBar component. */}
+      <NavBar 
+        activePage={activePage} 
+        {...{setActivePage}}
+      />
+
+      {/* Renders the active page based on state. */}
+      {renderActivePage()}
     </div>
   );
 }
