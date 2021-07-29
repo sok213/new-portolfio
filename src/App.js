@@ -5,7 +5,7 @@ import Bio from './Comps/Bio/Bio';
 import Contact from './Comps/Contact/Contact';
 import Projects from './Comps/Projects/Projects';
 import Skills from './Comps/Skills/Skills';
-import { render } from '@testing-library/react';
+import Footer from './Comps/Footer/Footer';
 
 function App() {
 
@@ -35,6 +35,9 @@ function App() {
 
       {/* Renders the active page based on state. */}
       {renderActivePage()}
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

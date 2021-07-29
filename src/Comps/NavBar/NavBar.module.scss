@@ -1,6 +1,8 @@
 .container {
-  border-bottom: thin solid black;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  padding: 35px 0px;
 }
 
 .noPadding {
@@ -10,10 +12,26 @@
 .navbar-ul {
   margin: 0;
   padding: 0;
+  width: 500px;
+  flex-basis: auto;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  border: 2px solid white;
+  list-style: none;
+
+  li {
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+  }
 }
 
 .buttonItem {
   border: none;
+  padding: 10px;
+  font-size: 20px;
   background: none;
 }
 
