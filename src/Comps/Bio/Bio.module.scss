@@ -1,11 +1,10 @@
 .container {
   display: flex;
   flex-direction: row;
-  flex-basis: auto;
   max-width: 1600px;
   width: 100%;
   align-self: center;
-  // border: thin solid white;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1300px) {
