@@ -14,31 +14,27 @@ export default function BioFAQ() {
 
   const faqItems = [
     {
-      q: 'Is this is a question?',
+      q: "What's your favourite video game?",
       a: 'This is the answer.'
     },
     {
-      q: 'Is this is a question?',
+      q: "Which holiday do you look forward to the most?",
       a: 'This is the answer.'
     },
     {
-      q: 'Is this is a question?',
+      q: 'Are you a sports fan?',
       a: 'This is the answer.'
     },
     {
-      q: 'Is this is a question?',
+      q: 'If you could live anywhere, where would it be?',
       a: 'This is the answer.'
     },
     {
-      q: 'Is this is a question?',
+      q: 'Do you believe in aliens?',
       a: 'This is the answer.'
     },
     {
-      q: 'Is this is a question?',
-      a: 'This is the answer.'
-    },
-    {
-      q: 'Is this is a question?',
+      q: 'Do you prefer PC or console gaming?',
       a: 'This is the answer.'
     }
   ];
@@ -54,12 +50,10 @@ export default function BioFAQ() {
 
       const question = item.q;
 
-
-
       return (
-        <li key={key}>
+        <li key={key} className={s.listItem}>
           <button onClick={onFaqSelect.bind(this, key)}>
-            {question}
+            <span>{key + 1}. </span>{question}
           </button>
         </li>
       );
@@ -68,9 +62,11 @@ export default function BioFAQ() {
 
   function renderQuestionsPage() {
     return (
-      <ul>
-        {renderFaqItem()}
-      </ul>
+      <Fragment>
+        <ul className={s.listContainer}>
+          {renderFaqItem()}
+        </ul>
+      </Fragment>
     );
   }
 
@@ -83,6 +79,10 @@ export default function BioFAQ() {
         <p>{q}</p>
         <h2>ANSWER</h2>
         <p>{a}</p>
+
+        <div>
+          <button onClick={goBack}>Ask another question</button>
+        </div>
       </section>
     )
   }
@@ -93,6 +93,11 @@ export default function BioFAQ() {
     }
 
     return renderQuestionsPage();
+  }
+
+  function goBack() {
+    setRevealAnswer(false);
+    setActiveFAQ(false);
   }
 
   return (
