@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectCard {
+  padding: 10px 20px;
+  flex-grow: 1;
+  border: thin solid white;
+  width: auto;
+  height: auto;
+}
