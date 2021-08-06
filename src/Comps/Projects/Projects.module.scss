@@ -1,15 +1,15 @@
 .container {
   display: flex;
   flex-direction: column;
-
-  @media screen and (max-width: 1200px) {
-    flex-direction: column;
-  }
 }
 
 .projectsContainer {
   display: flex;
   flex-direction: row;
+  
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 }
 
 .projectCard {

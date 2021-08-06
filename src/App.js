@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import s from './App.module.scss';
+
+// Sections Components.
 import NavBar from './Comps/NavBar/NavBar';
 import Bio from './Comps/Bio/Bio';
 import Contact from './Comps/Contact/Contact';
