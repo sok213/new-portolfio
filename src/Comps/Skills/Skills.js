@@ -5,7 +5,7 @@ export default function Skills() {
 
   const skills = [
     {
-      header: 'Development',
+      header: 'DEVELOPMENT',
       skillListItems: [
         'JavaScript/jQuery/ES6',
         'PHP',
@@ -17,7 +17,7 @@ export default function Skills() {
       ]
     },
     {
-      header: 'Design',
+      header: 'DESIGN',
       skillListItems: [
         'Adobe XD/PhotoShop',
         'Responsive/Mobile Design',
@@ -26,7 +26,7 @@ export default function Skills() {
       ]
     },
     {
-      header: 'Misc',
+      header: 'MISC',
       skillListItems: [
         '80WPM Typing Speed',
         'Magento CMS',
@@ -51,7 +51,9 @@ export default function Skills() {
 
       return (
         <div className={s.skillCard}>
-          <h3>{header}</h3>
+          <div className={s.headerCardContainer}>
+            <h3>{header}</h3>
+          </div>
           <ul className={s.listContainer}>
             {skillListItems.map(item =>{
               return (

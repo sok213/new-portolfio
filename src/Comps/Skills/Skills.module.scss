@@ -5,6 +5,7 @@
   max-width: 1600px;
   width: 100%;
   align-self: center;
+  padding-top: 40px;
 
   @media screen and (max-width: 1200px) {
     flex-direction: column;
@@ -19,6 +20,8 @@
   height: 520px;
   border-radius: 20px;
   background-color: #252E42;
+  -webkit-box-shadow: 3px 2px 14px -1px rgba(0,0,0,0.41); 
+  box-shadow: 3px 2px 14px -1px rgba(0,0,0,0.41);
 
   @media screen and (max-width: 1200px) {
     width: auto !important;
@@ -27,11 +30,33 @@
 
 .listContainer {
   list-style: none;
-  padding-left: 24px;;
+  padding-left: 24px;
+  margin-top: 45px;
 }
 
 .listContent {
   font-size: 20px;
   color: white;
+}
+
+.headerCardContainer {
+  padding: 2px 0px;
+  width: 230px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: -40px;
+  background: rgb(179,85,172);
+  background: linear-gradient(122deg, rgba(179,85,172,1) 0%, rgba(23,90,155,1) 100%);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.33); 
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.33);
+
+  h3 {
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+    font-size: 22px;
+    color: white;
+  }
 }
 
