@@ -15,7 +15,7 @@ export default function BioFAQ() {
   const faqItems = [
     {
       q: "What's your favourite video game?",
-      a: 'This is the answer.'
+      a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
     },
     {
       q: "Which holiday do you look forward to the most?",
@@ -52,7 +52,7 @@ export default function BioFAQ() {
 
       return (
         <li key={key} className={s.listItemContainer}>
-          <button onClick={onFaqSelect.bind(this, key)}>
+          <button className={s.faqCTA} onClick={onFaqSelect.bind(this, key)}>
             <span className={s.number}>{key + 1}. </span>{question}
           </button>
         </li>
@@ -74,16 +74,19 @@ export default function BioFAQ() {
     const { q, a } = faqItems[activeFAQ];
 
     return (
-      <section>
-        <h2 className={s.header}>QUESTION</h2>
-        <p>{q}</p>
-        <h2>ANSWER</h2>
-        <p>{a}</p>
+      <div className={s.revealSection}>
+        <h2 className={s.subHeader}>QUESTION</h2>
+        <p className={s.textContent}>{q}</p>
+        <h2 className={s.subHeader}>ANSWER</h2>
 
-        <div>
-          <button onClick={goBack}>Ask another question</button>
+        <div className={s.textContent_Bottom}>
+          <p className={s.textContent}>{a}</p>
         </div>
-      </section>
+
+        <div className={s.buttonContainer}>
+          <button className={s.goBackButton} onClick={goBack}>Ask another question</button>
+        </div>
+      </div>
     )
   }
 

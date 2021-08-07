@@ -1,24 +1,73 @@
 .container {
-  flex-grow: 2;
+  flex-grow: 1;
   padding: 15px;
 }
 
 .header, .mainHeader {
   font-size: 30px;
-  color: #F2E14B;
+  color: white;
+}
+
+.mainHeader, .subHeader {
+  font-family: Verdana, sans-serif;
+}
+
+.textContent {
+  color: #9F9FA7;
+  font-size: 18px;
+  font-style: italic;
 }
 
 .mainHeader {
   margin-bottom: 0px;
   font-family: Verdana, sans-serif;
   letter-spacing: 1px;
+  color: #F2E14B;
+}
+
+.subHeader {
+  font-size: 24px;
+  color: white;
+}
+
+.buttonContainer {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: center;
+  height: auto;
+}
+
+.goBackButton {
+  background: none;
+  border: 3px solid #4ECCF1;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #4ECCF1;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #4ECCF1;
+    color: white;
+  }
+}
+
+.revealSection {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textContent_Bottom {
+  min-height: 200px;
 }
 
 .widget {
-  max-height: 700px;
+  min-height: 600px;
   height: auto;
   flex-grow: 1;
-  width: 100%;
   max-width: 750px;
   border-radius: 25px;
   margin-left: auto;
@@ -47,7 +96,7 @@
   margin: 10px 0px;
 }
 
-.listItemContainer button {
+.faqCTA {
   margin-top: 10px;
   background: none;
   border: thin solid #707070;
@@ -58,6 +107,11 @@
   font-size: 18px;
   color: white;
   letter-spacing: 1.2px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: white;
+  }
 }
 
 .number {
