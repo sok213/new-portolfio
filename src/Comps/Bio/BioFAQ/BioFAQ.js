@@ -51,9 +51,9 @@ export default function BioFAQ() {
       const question = item.q;
 
       return (
-        <li key={key} className={s.listItem}>
+        <li key={key} className={s.listItemContainer}>
           <button onClick={onFaqSelect.bind(this, key)}>
-            <span>{key + 1}. </span>{question}
+            <span className={s.number}>{key + 1}. </span>{question}
           </button>
         </li>
       );
@@ -75,7 +75,7 @@ export default function BioFAQ() {
 
     return (
       <section>
-        <h2>QUESTION</h2>
+        <h2 className={s.header}>QUESTION</h2>
         <p>{q}</p>
         <h2>ANSWER</h2>
         <p>{a}</p>
@@ -103,8 +103,8 @@ export default function BioFAQ() {
   return (
     <section className={s.container}>
       <div className={s.widget}>
-        <h1>Ask me questions</h1>
-        <p><small>(click to select)</small></p>
+        <h1 className={s.mainHeader}>ASK ME QUESTIONS</h1>
+        <p className={s.subText}><small>(click to select)</small></p>
         {renderContents()}
       </div>
     </section>

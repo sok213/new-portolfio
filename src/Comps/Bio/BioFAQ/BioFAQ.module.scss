@@ -3,20 +3,38 @@
   padding: 15px;
 }
 
+.header, .mainHeader {
+  font-size: 30px;
+  color: #F2E14B;
+}
+
+.mainHeader {
+  margin-bottom: 0px;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
 .widget {
   max-height: 700px;
-  height: 100%;
+  height: auto;
   flex-grow: 1;
   width: 100%;
   max-width: 750px;
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px 30px 25px 30px;
 
   background: rgb(95,95,95);
   background: linear-gradient(122deg, rgba(95,95,95,1) 0%, rgba(4,7,37,1) 100%);
 
   box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.26);
+}
+
+.subText {
+  font-size: 20px;
+  color: #C6C0C0;
+  margin-top: 10px;
 }
 
 .listContainer {
@@ -25,6 +43,25 @@
   margin: 20px 0px;
 }
 
-.listItem {
+.listItemContainer {
   margin: 10px 0px;
+}
+
+.listItemContainer button {
+  margin-top: 10px;
+  background: none;
+  border: thin solid #707070;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border-radius: 15px;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1.2px;
+}
+
+.number {
+  color: #F2E14B;
+  font-weight: bold;
+  font-size: 20px;
 }
