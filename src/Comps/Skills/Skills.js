@@ -10,6 +10,8 @@ export default function Skills() {
         'JavaScript/jQuery/ES6',
         'PHP',
         'ReactJS/MobX/Hooks/Redux',
+        'Flexbox/Bootstrap',
+        'GIT/Version Control',
         'HTML Emails (using proper tables structure)',
         'PSD to HTML Conversion'
       ]
@@ -27,12 +29,12 @@ export default function Skills() {
       header: 'Misc',
       skillListItems: [
         '80WPM Typing Speed',
-        'Self Motivated',
         'Magento CMS',
         'Video Editing/Adobe Premiere',
-        'Customer Service/Intercom',
+        'Intercom Customer Support',
         'Jira Software/Ticket Creation/Kanban Board management',
         'Writer/Content Creator',
+        'Self Motivated',
         'Friendly'
       ]
     }
@@ -54,7 +56,7 @@ export default function Skills() {
             {skillListItems.map(item =>{
               return (
                 <li>
-                  <p>{item}</p>
+                  <p className={s.listContent}>{item}</p>
                 </li>
               );
             })}
