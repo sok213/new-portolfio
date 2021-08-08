@@ -6,20 +6,23 @@ export default function Projects() {
   const projects = [
     {
       title: 'Some Digital Agency',
-      desc: 'this is a description',
+      desc: 'Sint officia veniam et dolore dolore esse ad ut ut magna laboris fugiat sunt consequat. Nulla ad ea ex quis ea elit sit ea. Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit.',
       link: '#',
+      thumbnail: '../Assets/test.jpg',
       source_code: '#'
     },
     {
       title: 'HTML Emails',
-      desc: 'this is a description',
+      desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
       link: '#',
+      thumbnail: '',
       source_code: '#'
     },
     {
       title: 'Video Game',
-      desc: 'this is a description',
+      desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
       link: '#',
+      thumbnail: '',
       source_code: '#'
     }
   ];
@@ -33,9 +36,15 @@ export default function Projects() {
       } = item;
 
       return (
-        <div className={s.projectCard}>
-          <h3>{title}</h3>
-          <p>{desc}</p>
+        <div className={s.projectCardContainer}>
+          <div className={s.card}>
+            <div className={s.header}>
+              <h3>{title}</h3>
+            </div>
+          </div>
+          <div className={s.desc}>
+            <p>{desc}</p>
+          </div>
         </div>
       );
     });
@@ -43,8 +52,6 @@ export default function Projects() {
 
   return (
     <div className={s.container}>
-      <h1>Projects</h1>
-
       <div className={s.projectsContainer}>
         {renderProjects()}
       </div>

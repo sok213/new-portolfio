@@ -2,7 +2,7 @@
   display: flex;
   align-content: center;
   flex-direction: column;
-  padding: 0px 20px;
+  padding: 30px 20px;
 }
 
 .projectsContainer {
@@ -17,23 +17,59 @@
   }
 }
 
-.projectCard {
-  padding: 10px 20px;
-  flex-grow: 1;
-  border: thin solid white;
-  background-color: #ECF2F1;
-  width: auto;
+.projectCardContainer {
+  padding: 0;
+  width: 100%;
   height: auto;
-
-  -webkit-box-shadow: 3px 2px 14px -1px rgba(0,0,0,0.41); 
-  box-shadow: 3px 2px 14px -1px rgba(0,0,0,0.41);
+  margin-bottom: 20px;
+  border-radius: 0px 0px 10px 10px;
 }
 
-.projectCard:nth-child(2) {
+.projectCardContainer:nth-child(2) {
   margin-left: 70px;
   margin-right: 70px;
 
   @media screen and (max-width: 1200px) {
     margin: 30px 0px;
+  }
+}
+
+.card {
+  background-color: red;
+  background-image: url('../../Assets/test.jpg');
+  border: 8px solid white;
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
+  height: 250px;
+  background-size: 100%;
+
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
+  z-index: 1;
+  position: relative;
+
+
+}
+
+.header {
+  background-color: white;
+  width: 220px;
+  border-radius: 0px 0px 10px 0px;
+
+  h3 {
+    margin: 0px;
+    padding: 5px 0px 10px 10px;
+  }
+}
+
+.desc {
+  border-radius: 0px 0px 10px 10px;
+  background-color: #9CBCB3;
+  padding: 20px;
+  height: 130px;
+  z-index: -1;
+
+  p {
+    color: #425970;
+    margin: 0;
   }
 }
