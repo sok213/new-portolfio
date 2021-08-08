@@ -1,11 +1,16 @@
 .container {
   display: flex;
+  align-content: center;
   flex-direction: column;
+  padding: 0px 20px;
 }
 
 .projectsContainer {
   display: flex;
   flex-direction: row;
+  align-self: center;
+  max-width: 1600px;
+  width: 100%;
   
   @media screen and (max-width: 1200px) {
     flex-direction: column;
@@ -16,6 +21,19 @@
   padding: 10px 20px;
   flex-grow: 1;
   border: thin solid white;
+  background-color: #ECF2F1;
   width: auto;
   height: auto;
+
+  -webkit-box-shadow: 3px 2px 14px -1px rgba(0,0,0,0.41); 
+  box-shadow: 3px 2px 14px -1px rgba(0,0,0,0.41);
+}
+
+.projectCard:nth-child(2) {
+  margin-left: 70px;
+  margin-right: 70px;
+
+  @media screen and (max-width: 1200px) {
+    margin: 30px 0px;
+  }
 }

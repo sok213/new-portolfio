@@ -5,16 +5,22 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Project 1',
-      desc: 'this is a description'
+      title: 'Some Digital Agency',
+      desc: 'this is a description',
+      link: '#',
+      source_code: '#'
     },
     {
-      title: 'Project 2',
-      desc: 'this is a description'
+      title: 'HTML Emails',
+      desc: 'this is a description',
+      link: '#',
+      source_code: '#'
     },
     {
-      title: 'Project 3',
-      desc: 'this is a description'
+      title: 'Video Game',
+      desc: 'this is a description',
+      link: '#',
+      source_code: '#'
     }
   ];
 
