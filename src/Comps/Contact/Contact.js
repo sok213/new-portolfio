@@ -16,6 +16,12 @@ export default function Contact() {
 
   return (
     <div className={s.container}>
+
+      <div className={s.headerContainer}>
+        <h1>Get in Touch!</h1>
+        <p>Contact me by filling out the form below along with a message.<br></br>Or you can email me at sokcodes@gmail.com</p>
+      </div>
+
       <form 
         className={s.formContainer} 
         onSubmit={handleSubmit}
