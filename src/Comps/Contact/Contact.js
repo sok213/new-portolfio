@@ -65,7 +65,7 @@ export default function Contact() {
 
           <div className={s.buttonContainer}>
             <button type="submit" disabled={state.submitting}>
-              Submit
+              <p>SEND</p>
             </button>
           </div>
         </div>
