@@ -19,7 +19,7 @@ export default function Contact() {
 
       <div className={s.headerContainer}>
         <h1>Get in Touch!</h1>
-        <p>Contact me by filling out the form below along with a message.<br></br>Or you can email me at sokcodes@gmail.com</p>
+        <p>Contact me by filling out the form below along with a message. Messages are sent directly to my email and I check them regularly. You can expect to hear back from me in 1-3 days. :)</p>
       </div>
 
       <form 
