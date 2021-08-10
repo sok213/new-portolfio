@@ -7,8 +7,24 @@ export default function Footer() {
 
   return (
     <div className={s['footer-container']}>
-      <FontAwesomeIcon icon={faGithub} className={s.link} />
-      <FontAwesomeIcon icon={faLinkedin} className={s.link} />
+      <a 
+        href="https://github.com/sok213"
+        target="_blank"
+      >
+        <FontAwesomeIcon 
+          icon={faGithub} 
+          className={s.link} 
+        />
+      </a>
+      <a 
+        href="https://www.linkedin.com/in/sophanarith-sok-a50097b7/"
+        target="_blank"
+      >
+        <FontAwesomeIcon 
+          icon={faLinkedin} 
+          className={s.link} 
+        />
+      </a>
     </div>
   );
 }
