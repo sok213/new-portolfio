@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import s from './Contact.module.scss';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons'
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
@@ -18,7 +19,7 @@ export default function Contact() {
     <div className={s.container}>
 
       <div className={s.headerContainer}>
-        <h1>Get in Touch!</h1>
+        <h1>Get in Touch! <FontAwesomeIcon icon={faEnvelopeOpenText} className={s.speechBubble} /></h1>
         <p>Contact me by filling out the form below along with a message. Messages are sent directly to my email and I check them regularly. You can expect to hear back from me in 1-3 days. :)</p>
       </div>
 
