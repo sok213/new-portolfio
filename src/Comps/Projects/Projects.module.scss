@@ -2,7 +2,8 @@
   display: flex;
   align-content: center;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 0px 20px;
+  min-height: 680px;
 }
 
 .projectsContainer {
@@ -19,6 +20,7 @@
 
 .projectCardContainer {
   padding: 0;
+  max-width: 500px;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
