@@ -16,14 +16,16 @@ export default function Projects() {
       desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
       link: '#',
       thumbnail: '',
-      source_code: '#'
+      source_code: '#',
+      width: 150
     },
     {
       title: 'Video Game',
       desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
       link: '#',
       thumbnail: '',
-      source_code: '#'
+      source_code: '#',
+      width: 135
     }
   ];
 
@@ -32,13 +34,14 @@ export default function Projects() {
     return projects.map(item => {
       const {
         title,
-        desc
+        desc,
+        width
       } = item;
 
       return (
         <div className={s.projectCardContainer}>
           <div className={s.card}>
-            <div className={s.header}>
+            <div className={s.header} style={{ width }} >
               <h3>{title}</h3>
             </div>
           </div>
