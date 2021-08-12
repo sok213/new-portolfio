@@ -55,9 +55,9 @@ export default function Skills() {
             <h3>{header}</h3>
           </div>
           <ul className={s.listContainer}>
-            {skillListItems.map(item =>{
+            {skillListItems.map((item, key) =>{
               return (
-                <li>
+                <li key={key}>
                   <p className={s.listContent}>{item}</p>
                 </li>
               );

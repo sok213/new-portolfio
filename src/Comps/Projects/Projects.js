@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'Some Digital Agency',
-      desc: 'Sint officia veniam et dolore dolore esse ad ut ut magna laboris fugiat sunt consequat. Nulla ad ea ex quis ea elit sit ea. Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit.',
+      desc: 'Sint officia veniam et dolore dolore esse ad ut ut magna laboris fugiat sunt consequat. Nulla ad ea ex quis ea elit sit ea. Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat.',
       link: '#',
       thumbnail: '../Assets/test.jpg',
       source_code: '#'
