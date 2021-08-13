@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import s from './Projects.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGamepad, faBuilding, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGamepad, faBuilding, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Projects() {
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import s from './Contact.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeOpenText, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
@@ -75,7 +75,7 @@ export default function Contact() {
 
           <div className={s.buttonContainer}>
             <button type="submit" disabled={state.submitting}>
-              <p>SEND</p>
+              <p>SEND <FontAwesomeIcon icon={faPaperPlane} className={s.paperPlane} /></p>
             </button>
           </div>
         </div>
