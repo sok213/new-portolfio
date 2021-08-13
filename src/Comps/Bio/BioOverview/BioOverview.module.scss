@@ -13,6 +13,24 @@
   }
 }
 
+.volumeIcon {
+  border: 3px solid white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 5px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    color: #293D43;
+    border-color: #293D43;
+  }
+}
+
 .default-p {
   color: #D5E2E6;
   font-size: 30px;

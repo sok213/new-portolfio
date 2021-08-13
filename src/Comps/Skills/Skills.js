@@ -8,12 +8,13 @@ export default function Skills() {
       header: 'DEVELOPMENT',
       skillListItems: [
         'JavaScript/jQuery/ES6',
-        'PHP',
+        'Node',
         'ReactJS/MobX/Hooks/Redux',
         'Flexbox/Bootstrap',
         'GIT/Version Control',
         'HTML Emails (using proper tables structure)',
-        'PSD to HTML Conversion'
+        'PSD to HTML Conversion',
+        'PHP'
       ]
     },
     {
