@@ -54,6 +54,11 @@
   }
 }
 
+.activeInput:focus {
+  outline: none !important;
+  border-color: rgb(255, 209, 148);
+}
+
 .formContents {
   display: inline-block;
   flex-direction: column;
@@ -75,13 +80,11 @@
     padding-left: 15px;
     margin: 0;
     border: none;
-
     background: none;
     border: 2px solid #DDFFCE;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 7px;
-
     color: #DDFFCE;
     font-size: 20px;
   }

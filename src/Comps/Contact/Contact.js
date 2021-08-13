@@ -32,6 +32,7 @@ export default function Contact() {
             Name
           </label>
           <input
+            className={s.activeInput}
             id="name"
             type="name" 
             name="name"
@@ -46,6 +47,7 @@ export default function Contact() {
             Email Address
           </label>
           <input
+            className={s.activeInput}
             id="email"
             type="email" 
             name="email"
@@ -60,6 +62,7 @@ export default function Contact() {
             Message
           </label>
           <textarea
+            className={s.activeInput}
             id="message"
             name="message"
             required
