@@ -1,6 +1,8 @@
 import React, { Fragment, useState } from 'react';
 import { render } from 'react-dom';
 import s from './BioFAQ.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStepBackward } from '@fortawesome/free-solid-svg-icons';
 
 export default function BioFAQ() {
 
@@ -84,7 +86,12 @@ export default function BioFAQ() {
         </div>
 
         <div className={s.buttonContainer}>
-          <button className={s.goBackButton} onClick={goBack}>Ask another question</button>
+          <button 
+            className={s.goBackButton} 
+            onClick={goBack}
+          >
+            Ask another question <FontAwesomeIcon icon={faStepBackward} className={s.backIcon} />
+          </button>
         </div>
       </div>
     )

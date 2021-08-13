@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import s from './Contact.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeOpenText, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeOpenText, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
