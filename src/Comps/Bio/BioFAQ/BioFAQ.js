@@ -76,7 +76,7 @@ export default function BioFAQ() {
     const { q, a } = faqItems[activeFAQ];
 
     return (
-      <div className={`${s.revealSection} animate__animated animate__bounceIn`}>
+      <div className={`${s.revealSection} animate__animated animate__fadeIn`}>
         <h2 className={s.subHeader}>QUESTION</h2>
         <p className={s.textContent_Q}>{q}</p>
         <h2 className={s.subHeader}>ANSWER</h2>

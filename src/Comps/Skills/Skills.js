@@ -1,5 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import s from './Skills.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDraftingCompass, faLaptopCode, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 export default function Skills() {
 
@@ -7,6 +9,7 @@ export default function Skills() {
     {
       header: 'DEVELOPMENT',
       transitionAnimation: 'fadeInLeft',
+      icon: faLaptopCode, 
       skillListItems: [
         'JavaScript/jQuery/ES6',
         'Node',
@@ -21,6 +24,7 @@ export default function Skills() {
     {
       header: 'DESIGN',
       transitionAnimation: setAnimationClass(),
+      icon: faDraftingCompass, 
       skillListItems: [
         'Adobe XD/PhotoShop',
         'Responsive/Mobile Design',
@@ -31,6 +35,7 @@ export default function Skills() {
     {
       header: 'MISC',
       transitionAnimation: setAnimationClass2(),
+      icon: faLightbulb,
       skillListItems: [
         '80WPM Typing Speed',
         'Magento CMS',
@@ -90,7 +95,8 @@ export default function Skills() {
       const {
         header, 
         skillListItems,
-        transitionAnimation
+        transitionAnimation,
+        icon
       } = skillCard;
 
       return (
@@ -99,7 +105,7 @@ export default function Skills() {
             animate__animated animate__${transitionAnimation}
         `}>
           <div className={s.headerCardContainer}>
-            <h3>{header}</h3>
+            <h3><FontAwesomeIcon icon={icon} className={s.headerIcon} />{header}</h3>
           </div>
           <ul className={s.listContainer}>
             {skillListItems.map((item, key) =>{
