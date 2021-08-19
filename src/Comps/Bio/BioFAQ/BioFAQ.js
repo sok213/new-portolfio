@@ -44,7 +44,6 @@ export default function BioFAQ() {
   function onFaqSelect(key) {
     setRevealAnswer(true);
     setActiveFAQ(key);
-    console.log(key);
   }
 
   function renderFaqItem() {

@@ -25,7 +25,7 @@ export default function Footer() {
           className={s.link} 
         />
       </a>
-      <a 
+      {/* <a 
         href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         target="_blank"
       >
@@ -33,7 +33,7 @@ export default function Footer() {
           icon={faFacebookSquare} 
           className={s.link} 
         />
-      </a>
+      </a> */}
     </div>
   );
 }
