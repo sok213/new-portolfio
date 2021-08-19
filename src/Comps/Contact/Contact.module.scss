@@ -138,10 +138,14 @@
       cursor: pointer;
       transition: 0.2s;
 
-      &:hover {
+      &:hover,  &:disabled {
         background: none;
         color: #293D43;
         border-color: #293D43;
+      }
+
+      &:disabled {
+        cursor: wait;
       }
 
       p {

@@ -42,6 +42,7 @@ export default function Contact() {
             type="name" 
             name="name"
             required
+            disabled={state.submitting}
           />
           <ValidationError 
             prefix="Name" 
@@ -57,6 +58,7 @@ export default function Contact() {
             type="email" 
             name="email"
             required
+            disabled={state.submitting}
           />
           <ValidationError 
             prefix="Email" 
@@ -71,6 +73,7 @@ export default function Contact() {
             id="message"
             name="message"
             required
+            disabled={state.submitting}
           />
           <ValidationError 
             prefix="Message" 
