@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import s from './Skills.module.scss';
 
 export default function Skills() {
@@ -6,6 +6,7 @@ export default function Skills() {
   const skills = [
     {
       header: 'DEVELOPMENT',
+      transitionAnimation: 'fadeInLeft',
       skillListItems: [
         'JavaScript/jQuery/ES6',
         'Node',
@@ -19,6 +20,7 @@ export default function Skills() {
     },
     {
       header: 'DESIGN',
+      transitionAnimation: setAnimationClass(),
       skillListItems: [
         'Adobe XD/PhotoShop',
         'Responsive/Mobile Design',
@@ -28,6 +30,7 @@ export default function Skills() {
     },
     {
       header: 'MISC',
+      transitionAnimation: setAnimationClass2(),
       skillListItems: [
         '80WPM Typing Speed',
         'Magento CMS',
@@ -41,17 +44,60 @@ export default function Skills() {
     }
   ];
 
+  function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return width;
+  }
+  
+  function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    return windowDimensions;
+  }
+
+  function setAnimationClass() {
+
+    if(getWindowDimensions() >= 1200) {
+      return 'fadeInDown';
+    }
+
+    return 'fadeInRight';
+  }
+
+  function setAnimationClass2() {
+
+    if(getWindowDimensions() >= 1200) {
+      return 'fadeInRight';
+    }
+
+    return 'fadeInLeft';
+  }
+
+
   function renderSkillCards() {
 
-    return skills.map(skillCard => {
+    return skills.map((skillCard, key) => {
 
       const {
         header, 
-        skillListItems
+        skillListItems,
+        transitionAnimation
       } = skillCard;
 
       return (
-        <div className={`${s.skillCard} animate__animated animate__fadeInRight`}>
+        <div key={key} className={`
+            ${s.skillCard} 
+            animate__animated animate__${transitionAnimation}
+        `}>
           <div className={s.headerCardContainer}>
             <h3>{header}</h3>
           </div>

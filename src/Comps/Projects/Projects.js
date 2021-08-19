@@ -39,7 +39,7 @@ export default function Projects() {
 
   function renderProjects() {
 
-    return projects.map(item => {
+    return projects.map((item, key) => {
       const {
         title,
         desc,
@@ -50,7 +50,10 @@ export default function Projects() {
       } = item;
 
       return (
-        <div className={`${s.projectCardContainer} animate__animated animate__fadeIn`}>
+        <div 
+          key={key} 
+          className={`${s.projectCardContainer} animate__animated animate__fadeIn`
+        }>
           <div className={s.card}>
             <div className={s.header} style={{ width }} >
               <h3>{title}</h3>
