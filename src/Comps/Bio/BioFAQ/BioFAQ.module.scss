@@ -132,3 +132,35 @@
   font-size: 20px;
   position: relative;
 }
+
+.questionIcon {
+  position: absolute;
+  top: -20;
+  right: 0;
+  z-index: 2;
+}
+
+.iconWrapper {
+  position: relative;
+  top: -70px;
+  right: -90px;
+}
+
+@media screen and (max-width: 570px) {
+
+  .questionIcon {
+    height: 150px;
+    width: 150px;
+  }
+
+  .iconWrapper {
+    right: 10;
+  }
+
+}
+
+@media screen and (max-width: 499px) {
+  .iconWrapper {
+    display: none;
+  }
+}

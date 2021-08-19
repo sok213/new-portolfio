@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import s from './BioFAQ.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStepBackward } from '@fortawesome/free-solid-svg-icons';
+import questionIcon from './../../../Assets/question_icon.png';
 
 export default function BioFAQ() {
 
@@ -112,6 +113,9 @@ export default function BioFAQ() {
   return (
     <section className={s.container}>
       <div className={s.widget}>
+        <div className={s.iconWrapper}>
+          <img src={questionIcon} className={s.questionIcon}/>
+        </div>
         <h1 className={s.mainHeader}>ASK ME QUESTIONS</h1>
         <p className={s.subText}><small>(click to select)</small></p>
         {renderContents()}
