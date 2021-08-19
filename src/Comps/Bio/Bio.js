@@ -7,7 +7,7 @@ export default function Bio() {
 
   return (
     <Fragment>
-      <div className={s.container}>
+      <div className={`${s.container} animate__animated animate__fadeIn`}>
         <BioOverview />
         <BioFAQ />
       </div>

@@ -50,7 +50,7 @@ export default function Projects() {
       } = item;
 
       return (
-        <div className={s.projectCardContainer}>
+        <div className={`${s.projectCardContainer} animate__animated animate__fadeIn`}>
           <div className={s.card}>
             <div className={s.header} style={{ width }} >
               <h3>{title}</h3>

@@ -51,7 +51,7 @@ export default function Skills() {
       } = skillCard;
 
       return (
-        <div className={s.skillCard}>
+        <div className={`${s.skillCard} animate__animated animate__fadeInRight`}>
           <div className={s.headerCardContainer}>
             <h3>{header}</h3>
           </div>

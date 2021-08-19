@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import s from './App.module.scss';
+import 'animate.css';
 
 // Sections Components.
 import NavBar from './Comps/NavBar/NavBar';
@@ -30,7 +31,7 @@ function App() {
   }
 
   return (
-    <div className={s.mainContainer}>
+    <div className={`${s.mainContainer} animate__animated animate__fadeIn`}>
       {/* Renders the NavBar component. */}
       <NavBar 
         activePage={activePage} 

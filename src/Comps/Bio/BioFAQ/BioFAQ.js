@@ -65,7 +65,7 @@ export default function BioFAQ() {
   function renderQuestionsPage() {
     return (
       <Fragment>
-        <ul className={s.listContainer}>
+        <ul className={`${s.listContainer} animate__animated animate__fadeIn`}>
           {renderFaqItem()}
         </ul>
       </Fragment>
@@ -76,7 +76,7 @@ export default function BioFAQ() {
     const { q, a } = faqItems[activeFAQ];
 
     return (
-      <div className={s.revealSection}>
+      <div className={`${s.revealSection} animate__animated animate__bounceIn`}>
         <h2 className={s.subHeader}>QUESTION</h2>
         <p className={s.textContent_Q}>{q}</p>
         <h2 className={s.subHeader}>ANSWER</h2>

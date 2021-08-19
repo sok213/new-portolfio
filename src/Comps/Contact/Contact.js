@@ -21,7 +21,7 @@ export default function Contact() {
   }
   
   return (
-    <div className={s.container}>
+    <div className={`${s.container} animate__animated animate__fadeIn`}>
 
       <div className={s.headerContainer}>
         <h1>Get in Touch! <FontAwesomeIcon icon={faEnvelopeOpenText} className={s.speechBubble} /></h1>
