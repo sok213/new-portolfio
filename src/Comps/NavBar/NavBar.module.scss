@@ -12,6 +12,7 @@
 .navbar-ul {
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   width: 500px;
   flex-basis: auto;
   border-radius: 50px;
@@ -20,8 +21,9 @@
   align-self: center;
   border: 2px solid white;
   list-style: none;
-  background-color: white;
+  // background-color: white;
   opacity: 0.85;
+  min-height: 80px;
 
   li {
     padding: 15px;
@@ -35,7 +37,32 @@
   }
 }
 
+.navbar-ul {
+  @media screen and (max-width: 499px) {
+    display: none;
+  }
+}
+
+.hamburgerMenuWrapper {
+  display: none;
+  padding-left: 20px;
+  cursor: pointer;
+
+  @media screen and (max-width: 499px) {
+    display: block;
+  }
+
+  button {
+    background: none;
+    border: none;
+    margin: 0;
+    font-size: 40px;
+    color: white;
+  }
+}
+
 .buttonItem {
+  color: white !important;
   border: none;
   padding: 10px;
   font-size: 20px;

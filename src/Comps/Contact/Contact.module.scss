@@ -8,6 +8,10 @@
   padding: 0px 20px;
   padding-top: 20px;
   height: 680px;
+
+  @media screen and (max-width: 499px) {
+    height: auto;
+  }
 }
 
 .speechBubble {

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import s from './NavBar.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar(props) {
 
@@ -47,6 +49,11 @@ function NavBar(props) {
 
   return (
     <nav className={s.container}>
+      <div className={s.hamburgerMenuWrapper}>
+        <button>
+          <FontAwesomeIcon icon={faBars} />
+        </button>
+      </div>
       <ul className={s['navbar-ul']}>
         {renderNavLinks()}
       </ul>
