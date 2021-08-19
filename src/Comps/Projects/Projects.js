@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import s from './Projects.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGamepad, faBuilding, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
 
 export default function Projects() {
 
   const projects = [
     {
       title: 'Some Digital Agency',
-      desc: 'Sint officia veniam et dolore dolore esse ad ut ut magna laboris fugiat sunt consequat. Nulla ad ea ex quis ea elit sit ea. Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat.',
-      link: '#',
-      thumbnail: '../Assets/test.jpg',
+      desc: 'A satirical landing page that pokes fun at digital agencies. No hard feelings, this was just for fun. Project was built with React using Class components and Flexbox for responsive UI. This project demonstrates my ability to build and design professional grade landing pages using a very simple yet effect technology stack.',
+      link_source: 'https://github.com/sok213/some-digital-agency',
+      link_project: '#',
+      thumbnail: thumbnail_1,
       top: '154px',
       icon: faBuilding,
       source_code: '#'
@@ -18,8 +20,9 @@ export default function Projects() {
     {
       title: 'HTML Emails',
       desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
-      link: '#',
-      thumbnail: '',
+      link_source: '#',
+      link_project: '#',
+      thumbnail: '../Assets/test.jpg',
       icon: faEnvelope,
       top: '163px',
       source_code: '#',
@@ -28,8 +31,9 @@ export default function Projects() {
     {
       title: 'Video Game',
       desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
-      link: '#',
-      thumbnail: '',
+      link_source: '#',
+      link_project: '#',
+      thumbnail: '../Assets/test.jpg',
       icon: faGamepad,
       top: '165px',
       source_code: '#',
@@ -46,7 +50,10 @@ export default function Projects() {
         width,
         icon,
         top,
-        left
+        left,
+        thumbnail,
+        link_source,
+        link_project
       } = item;
 
       return (
@@ -54,7 +61,7 @@ export default function Projects() {
           key={key} 
           className={`${s.projectCardContainer} animate__animated animate__fadeIn`
         }>
-          <div className={s.card}>
+          <div className={s.card} style={{ backgroundImage: `url(${thumbnail})` }}>
             <div className={s.header} style={{ width }} >
               <h3>{title}</h3>
             </div>
@@ -65,8 +72,8 @@ export default function Projects() {
           <div className={s.desc}>
             <p>{desc}</p>
             <div className={s.projectLinks}>
-              <p><a href="#">View Project</a></p>
-              <p><a href="#">View Source Code</a></p>
+              <p><a href={link_project} target="_blank">View Project</a></p>
+              <p><a href={link_source}  target="_blank">View Source Code</a></p>
             </div>
           </div>
         </div>

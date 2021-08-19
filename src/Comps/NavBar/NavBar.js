@@ -30,7 +30,6 @@ function NavBar(props) {
             >
               {link}
             </button>
-            <span className={s.line}></span>
           </li>
         ) 
       }
