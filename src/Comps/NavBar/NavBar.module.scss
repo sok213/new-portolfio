@@ -12,18 +12,17 @@
 .navbar-ul {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
   width: 500px;
   flex-basis: auto;
-  border-radius: 50px;
   display: flex;
   flex-direction: row;
   align-self: center;
-  border: 2px solid white;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
   list-style: none;
   // background-color: white;
   opacity: 0.85;
-  min-height: 80px;
+  min-height: 0px;
 
   li {
     padding: 15px;
@@ -62,7 +61,7 @@
 }
 
 .buttonItem {
-  color: white !important;
+  color: white;
   border: none;
   padding: 10px;
   font-size: 20px;
@@ -71,4 +70,5 @@
 
 .activeLink {
   font-weight: bolder;
+  color: #293D43;
 }
