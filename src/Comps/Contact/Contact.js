@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import s from './Contact.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeOpenText, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpenText, faPaperPlane, faSmileBeam } from '@fortawesome/free-solid-svg-icons';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contact() {
@@ -10,11 +10,16 @@ export default function Contact() {
   const [ state, handleSubmit ] = useForm('xrgryrrn');
 
   if (state.succeeded) {
-    return <div>Thank you for reaching out! You will hear back from me shortly.</div>;
+    return (
+      <div className={s.container}>
+        <div className={s.successMsg}>
+          <p>Thank you for reaching out! <br></br> You will hear back from me shortly.</p>
+          <FontAwesomeIcon icon={faSmileBeam} className={s.smileyFace} />
+        </div>
+      </div>
+    );
   }
-
-
-
+  
   return (
     <div className={s.container}>
 
