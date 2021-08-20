@@ -70,7 +70,7 @@ export default function Projects() {
             </div>
           </div>
           <div className={s.desc}>
-            <p>{desc}</p>
+            <p className={s.info}>{desc}</p>
             <div className={s.projectLinks}>
               <p><a href={link_project} target="_blank">View Project</a></p>
               <p><a href={link_source}  target="_blank">View Source Code</a></p>

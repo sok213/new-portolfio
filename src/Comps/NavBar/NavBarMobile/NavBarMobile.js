@@ -24,7 +24,6 @@ export default function NavBarMobile(props) {
     >
       <ul className={s.listContainer}>
         {/* {renderNavItem()} */}
-        <p>test</p>
       </ul>
     </div>
   );
