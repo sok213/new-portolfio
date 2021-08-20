@@ -1,22 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './NavBar.module.scss';
+import NavBarMobile from './NavBarMobile/NavBarMobile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar(props) {
+
+  const [navBarMobileToggle, setNavBarMobileToggle] = useState(true);
 
   const {
     setActivePage,
     activePage
   } = props;
 
+  const links = [
+    'Bio',
+    'Skills',
+    'Projects',
+    'Contact'
+  ];
+
+  function toggleDropdown() {
+
+    if(navBarMobileToggle) {
+      setNavBarMobileToggle(false);
+    } else {
+      setNavBarMobileToggle(true);
+    }
+  }
+
   function renderNavLinks() {
-    const links = [
-      'Bio',
-      'Skills',
-      'Projects',
-      'Contact'
-    ];
 
     return links.map((link, key) => {
       if(activePage === link) {
@@ -50,10 +63,11 @@ function NavBar(props) {
   return (
     <nav className={s.container}>
       <div className={s.hamburgerMenuWrapper}>
-        <button>
+        <button onClick={toggleDropdown}>
           <FontAwesomeIcon icon={faBars} />
         </button>
       </div>
+      <NavBarMobile toggle={navBarMobileToggle} links={links} />
       <ul className={s['navbar-ul']}>
         {renderNavLinks()}
       </ul>

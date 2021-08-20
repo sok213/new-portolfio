@@ -1,0 +1,22 @@
+.container {
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s;
+  
+  @media screen and (min-width: 501px) {
+    display: none !important;
+  }
+}
+
+.active {
+  height: 200px;
+  display: block;
+}
+
+.listcontainer {
+  position: relative;
+}
+
+.listItem {
+  position: relative;
+}
