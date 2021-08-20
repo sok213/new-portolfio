@@ -4,6 +4,10 @@
   padding: 0px 20px;
   padding-top: 20px;
   min-height: 680px;
+
+  @media screen and (max-width: 499px) {
+    padding: 0px 10px;
+  }
 }
 
 .projectsContainer {

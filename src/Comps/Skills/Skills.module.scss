@@ -41,12 +41,25 @@
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    width: 100% !important;
+    width: 100%;
 
     &:nth-child(2) {
       margin-top: 50px;
       margin-bottom: 50px;
     }
+  }
+
+  @media screen and (max-width: 499px) {
+    &:nth-child(2) {
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+
+    margin-left: 0;
+    margin-right: 0;
+
+    width: auto;
+    border-radius: 0px;
   }
 }
 
@@ -59,6 +72,10 @@
 .listContent {
   font-size: 20px;
   color: white;
+
+  @media screen and (max-width: 499px) {
+    font-size: 16px;
+  }
 }
 
 .headerCardContainer {

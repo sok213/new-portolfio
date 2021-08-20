@@ -9,7 +9,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'Some Digital Agency',
-      desc: 'A satirical landing page that pokes fun at digital agencies. No hard feelings, this was just for fun. Project was built with React using Class components and Flexbox for responsive UI. This project demonstrates my ability to build and design professional grade landing pages using a very simple yet effect technology stack.',
+      desc: 'A satirical landing page that pokes fun at digital agencies. No hard feelings, this was just for fun. Project was built with React using Class components and Flexbox for responsive UI. This project demonstrates my ability to build and design professional grade landing pages using a very simple yet effective technology stack.',
       link_source: 'https://github.com/sok213/some-digital-agency',
       link_project: '#',
       thumbnail: thumbnail_1,

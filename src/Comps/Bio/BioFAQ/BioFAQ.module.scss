@@ -1,6 +1,15 @@
 .container {
   flex-grow: 1;
   padding: 15px;
+
+  @media screen and (max-width: 499px) {
+    padding: 0;
+    padding-right: 15;
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding-right: 40px;
+  }
 }
 
 .header, .mainHeader {
@@ -16,11 +25,20 @@
   color: #efcafa;
   font-size: 18px;
   font-style: italic;
+
+  @media screen and (max-width: 499px) {
+    font-size: 16px;
+  }
 }
+
 .textContent_Q {
   color: #C6C0C0;
   font-size: 18px;
   font-style: italic;
+
+  @media screen and (max-width: 499px) {
+    font-size: 16px;
+  }
 }
 
 .mainHeader {
@@ -28,12 +46,21 @@
   font-family: Verdana, sans-serif;
   letter-spacing: 1px;
   color: #F2E14B;
+
+  @media screen and (max-width: 499px) {
+    text-align: center;
+    font-size: 23px;
+  }
 }
 
 .subHeader {
   font-size: 24px;
   color: white;
   margin-bottom: 0;
+
+  @media screen and (max-width: 499px) {
+    font-size: 19px;
+  }
 }
 
 .buttonContainer {
@@ -64,10 +91,24 @@
   padding-left: 24px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1400px) {
+    padding-left: 0px;
+  }
+
+  @media screen and (max-width: 499px) {
+    padding-left: 10px;
+    padding-right: 10px;;
+  }
 }
 
 .textContent_Bottom {
   min-height: 200px;
+
+  @media screen and (max-width: 499px) {
+    min-height: 150px;
+    text-align: justify;
+  }
 }
 
 .widget {
@@ -79,17 +120,26 @@
   margin-left: auto;
   margin-right: auto;
   padding: 5px 30px 25px 30px;
-
   background: rgb(95,95,95);
   background: linear-gradient(122deg, rgba(95,95,95,1) 0%, rgba(4,7,37,1) 100%);
-
   box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.26);
+
+  @media screen and (max-width: 499px) {
+    border-radius: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-height: 450px;
+  }
 }
 
 .subText {
   font-size: 20px;
   color: #C6C0C0;
   margin-top: 10px;
+
+  @media screen and (max-width: 499px) {
+    text-align: center;
+  }
 }
 
 .listContainer {
@@ -118,12 +168,21 @@
   &:hover {
     border-color: white;
   }
+
+  @media screen and (max-width: 499px) {
+    border-radius: 10px;
+    font-size: 16px;
+  }
 }
 
 .number {
   color: #F2E14B;
   font-weight: bold;
   font-size: 20px;
+
+  @media screen and (max-width: 499px) {
+    font-size: 18px;
+  }
 }
 
 .backIcon {
@@ -159,7 +218,7 @@
 
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 540px) {
   .iconWrapper {
     display: none;
   }
