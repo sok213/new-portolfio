@@ -1,6 +1,7 @@
 .container {
   background-color: rgb(255, 255, 255);
   margin-top: 0px;
+  margin-bottom: 20px;
   
   @media screen and (min-width: 501px) {
     display: none !important;
