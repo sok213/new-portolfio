@@ -1,30 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import s from './NavBarMobile.module.scss';
 
 export default function NavBarMobile(props) {
 
   const {
     toggle,
-    links
+    links,
+    setActivePage,
+    activePage
   } = props;
 
+  function detectActiveTab(currentLink) {
+    if(currentLink === activePage) {
+      return s.activeTab;
+    }
+  }
+
   function renderNavItem() {
+
+    if(!toggle) {
+      return;
+    }
+
     return links.map((link, key) => {
       return (
-        <li key={key} className={s.listItem}>
-          <button>{link}</button>
-        </li>
-      )
+        <a 
+          key={key} 
+          className={`${s.listItem} ${detectActiveTab(link)}`} 
+          onClick={setActivePage.bind(null, link)}
+        >
+          {link}
+        </a>
+      );
     });
   }
 
   return (
     <div 
-      className={`${s.container} ${ toggle && s.active }`} 
+      className={`${s.container}`} 
     >
-      <ul className={s.listContainer}>
-        {/* {renderNavItem()} */}
-      </ul>
+      <li className={`${s.listContainer} ${ toggle && s.active }`}>
+        <div className={`${s.innerContainer} ${ toggle && s.active }`}>
+          {renderNavItem()}
+        </div>
+      </li>
     </div>
   );
 }

@@ -67,7 +67,12 @@ function NavBar(props) {
           <FontAwesomeIcon icon={faBars} />
         </button>
       </div>
-      <NavBarMobile toggle={navBarMobileToggle} links={links} />
+      <NavBarMobile 
+        toggle={navBarMobileToggle} 
+        links={links} 
+        setActivePage={setActivePage}
+        activePage={activePage}        
+      />
       <ul className={s['navbar-ul']}>
         {renderNavLinks()}
       </ul>
