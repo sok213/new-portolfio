@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import s from './Footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
 
@@ -17,7 +18,7 @@ export default function Footer() {
         />
       </a>
       <a 
-        href="https://github.com/sok213"
+        href="https://github.com/sok213/new-portolfio"
         target="_blank"
       >
         <FontAwesomeIcon 
@@ -25,15 +26,15 @@ export default function Footer() {
           className={s.link} 
         />
       </a>
-      {/* <a 
-        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      <a 
+        href="https://blog.paralect.com/post/3-ux-design-trends-are-hurting-your-online-business"
         target="_blank"
       >
         <FontAwesomeIcon 
-          icon={faFacebookSquare} 
+          icon={faNewspaper} 
           className={s.link} 
         />
-      </a> */}
+      </a>
     </div>
   );
 }
