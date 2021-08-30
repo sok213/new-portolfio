@@ -25,8 +25,8 @@ export default function BioFAQ() {
       a: 'My favourite holiday is Halloween because I love horror movies and, in my opinion, Halloween brings out the best events in terms of musical performers, haunt events such as Halloween Horror Nights at Universal, and the atmosphere that October brings to life.'
     },
     {
-      q: 'Are you a sports fan?',
-      a: 'I am not the biggest sports fan and if you asked me what is my favourite basketball team, I’d probably tell you that it was the Raiders. However, I do enjoy watching the occasional UFC fight every now and then if I recognize someone who is fighting.'
+      q: 'What makes Web Development enjoyable to you?',
+      a: 'I like the idea of taking concepts either from myself or designers and seeing it come to life. Coding to me is fun and I have always had a fascination with art and design, so being able to create user experiences with the fun aspect of coding is what keeps my intriqued in this field.'
     },
     {
       q: 'If you could live anywhere, where would it be?',
@@ -37,8 +37,8 @@ export default function BioFAQ() {
       a: 'Yes. There are trillions and trillions of planets out in the universe and it’s nearly impossible that we are the only living things in existence.'
     },
     {
-      q: 'Do you prefer PC or console gaming?',
-      a: 'I enjoy both. I have a Playstation 4 and a custom-built desktop computer. There are pros and cons to both. I love the ease-of-use, ready-to-play, and out-of-the-box environment that a console provides to gamers, but also dislike the fact that the hardware will quickly become outdated when compared to PC. I love PC for the customizability of one’s computer and the technical advantages that allow for amazing graphics when compared to consoles, but I also hate that you will be expected to spend an extensive amount of time configuring each game to work properly before getting to jump in and play.'
+      q: 'What skill are you currently learning?',
+      a: 'I am currenlty focusing on taking my web design skills to the next level. The current web app you are looking at was designed in Adobe XD and I love the software so far. I would love to dive into Sketch since many companies are utilizing it and it looks fun to learn and design within it. However, it is only compatible with Mac and currently my macbook is dead so I am confined to Windows for now.'
     }
   ];
 

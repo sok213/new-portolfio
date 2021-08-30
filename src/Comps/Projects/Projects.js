@@ -3,6 +3,7 @@ import s from './Projects.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGamepad, faBuilding, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
+import thumbnail_2 from './../../Assets/mail.jpg';
 
 export default function Projects() {
 
@@ -22,7 +23,7 @@ export default function Projects() {
       desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
       link_source: '#',
       link_project: '#',
-      thumbnail: '../Assets/test.jpg',
+      thumbnail: thumbnail_2,
       icon: faEnvelope,
       top: '163px',
       source_code: '#',
