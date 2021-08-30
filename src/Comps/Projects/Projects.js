@@ -20,7 +20,7 @@ export default function Projects() {
     },
     {
       title: 'HTML Emails',
-      desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
+      desc: 'A collection of HTML emails that I developed using HTML and CSS, utilizing table elements to showcase my ability to build HTML emails properly.',
       link_source: 'https://github.com/sok213/email-hub',
       link_project: '#',
       thumbnail: thumbnail_2,
