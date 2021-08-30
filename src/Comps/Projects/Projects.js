@@ -22,7 +22,7 @@ export default function Projects() {
       title: 'HTML Emails',
       desc: 'A collection of HTML emails that I developed using HTML and CSS, utilizing table elements to showcase my ability to build HTML emails properly. Also included is an article I wrote explaining the nature of HTML emails and why they are built the way they are.',
       link_source: 'https://github.com/sok213/email-hub',
-      link_project: '#',
+      link_project: 'https://sok213.github.io/email-hub/',
       thumbnail: thumbnail_2,
       icon: faEnvelope,
       top: '163px',
