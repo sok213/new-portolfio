@@ -31,7 +31,7 @@ export default function Projects() {
     },
     {
       title: 'Video Game',
-      desc: 'Ea enim officia qui minim incididunt magna qui occaecat duis Lorem et. Nulla culpa irure et id excepteur tempor excepteur consequat. Excepteur mollit laborum voluptate consequat nostrud officia nisi velit',
+      desc: 'An epic Pokémon inspired RPG video game demo I developed using JavaScript in combination with the PhaserJS library. Have fun!',
       link_source: '#',
       link_project: '#',
       thumbnail: '../Assets/test.jpg',
