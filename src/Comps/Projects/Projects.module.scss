@@ -17,7 +17,8 @@
   width: 100%;
   align-self: center;
   justify-content: space-between;
-  
+  flex-wrap: wrap;
+
   @media screen and (max-width: 1200px) {
     flex-wrap: wrap;
   }
@@ -43,8 +44,6 @@
   max-width: 30%;
   width: 100%;
   height: auto;
-  margin-right: auto;
-  margin-left: auto;
   border-radius: 0px 0px 10px 10px;
   animation-delay: 0.2s;
 
@@ -72,7 +71,12 @@
   }
 }
 
-.projectCardContainer:nth-child(3) {
+.projectCardContainer:nth-child(4) {
+  margin-top: 40px;
+}
+
+.projectCardContainer:nth-child(3), 
+.projectCardContainer:nth-child(4) {
 
   @media screen and (max-width: 1200px) {
     margin-top: 40px;

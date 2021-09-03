@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import s from './Projects.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGamepad, faBuilding, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGamepad, faBuilding, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons';
 import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
 import thumbnail_2 from './../../Assets/mail.jpg';
+import thumbnail_3 from './../../Assets/npm.jpg';
 
 export default function Projects() {
 
@@ -15,8 +16,7 @@ export default function Projects() {
       link_project: 'https://some-digital-agency-2021.herokuapp.com/',
       thumbnail: thumbnail_1,
       top: '154px',
-      icon: faBuilding,
-      source_code: '#'
+      icon: faBuilding
     },
     {
       title: 'HTML Emails',
@@ -26,7 +26,6 @@ export default function Projects() {
       thumbnail: thumbnail_2,
       icon: faEnvelope,
       top: '163px',
-      source_code: '#',
       width: 150
     },
     {
@@ -37,9 +36,18 @@ export default function Projects() {
       thumbnail: '../Assets/test.jpg',
       icon: faGamepad,
       top: '165px',
-      source_code: '#',
       width: 135
-    }
+    },
+    {
+      title: 'NPM Package',
+      desc: 'A React component wrapped in an NPM package that takes in an array of objects as a prop and generates an accordion. It’s very easy to use and offers 5 pre-built in themes. ',
+      link_source: '',
+      link_project: 'https://simple-react-accordion-2021.herokuapp.com/',
+      thumbnail: thumbnail_3,
+      icon: faCode,
+      top: '158px',
+      width: 200
+    }    
   ];
 
   function renderProjects() {
