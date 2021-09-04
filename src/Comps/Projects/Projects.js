@@ -5,6 +5,7 @@ import { faGamepad, faBuilding, faEnvelope, faCode } from '@fortawesome/free-sol
 import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
 import thumbnail_2 from './../../Assets/mail.jpg';
 import thumbnail_3 from './../../Assets/npm.jpg';
+import thumbnail_4 from './../../Assets/pixels.jpg';
 
 export default function Projects() {
 
@@ -16,7 +17,8 @@ export default function Projects() {
       link_project: 'https://some-digital-agency-2021.herokuapp.com/',
       thumbnail: thumbnail_1,
       top: '154px',
-      icon: faBuilding
+      icon: faBuilding,
+      width: 220
     },
     {
       title: 'HTML Emails',
@@ -29,14 +31,14 @@ export default function Projects() {
       width: 150
     },
     {
-      title: 'Video Game',
-      desc: 'An epic Pokémon inspired RPG video game demo I developed using JavaScript in combination with the PhaserJS library. Have fun!',
+      title: 'Video Game (Coming Soon)',
+      desc: 'An epic Pokémon inspired RPG video game demo I developed using JavaScript in combination with the PhaserJS library. COMING SOON! ',
       link_source: '#',
       link_project: '#',
-      thumbnail: '../Assets/test.jpg',
+      thumbnail: thumbnail_4,
       icon: faGamepad,
       top: '165px',
-      width: 135
+      width: 260
     },
     {
       title: 'NPM Package',
