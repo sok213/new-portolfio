@@ -18,7 +18,7 @@ export default function Footer() {
         />
       </a>
       <a 
-        href="https://github.com/sok213/new-portolfio"
+        href="https://github.com/sok213"
         target="_blank"
       >
         <FontAwesomeIcon 

@@ -38,7 +38,7 @@ export default function Projects() {
       thumbnail: thumbnail_4,
       icon: faGamepad,
       top: '165px',
-      width: 260
+      width: 270
     },
     {
       title: 'NPM Package',
