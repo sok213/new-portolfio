@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import s from './Projects.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGamepad, faBuilding, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +14,7 @@ export default function Projects() {
       title: 'Some Digital Agency',
       desc: 'A satirical landing page that pokes fun at digital agencies. No hard feelings, this was just for fun. Project was built with React using Class components and Flexbox for responsive UI. This project demonstrates my ability to build and design professional grade landing pages using a very simple yet effective technology stack.',
       link_source: 'https://github.com/sok213/some-digital-agency',
-      link_project: 'https://some-digital-agency-2021.herokuapp.com/',
+      link_project: 'https://www.somedigitalagency.com/',
       thumbnail: thumbnail_1,
       top: '154px',
       icon: faBuilding,
@@ -43,7 +43,7 @@ export default function Projects() {
     {
       title: 'NPM Package',
       desc: 'A React component wrapped in an NPM package that takes in an array of objects as a prop and generates an accordion. It’s very easy to use and offers 5 pre-built in themes. ',
-      link_source: '',
+      link_source: 'https://github.com/sok213/simple-react-accordion',
       link_project: 'https://simple-react-accordion-2021.herokuapp.com/',
       thumbnail: thumbnail_3,
       icon: faCode,
@@ -83,8 +83,18 @@ export default function Projects() {
           <div className={s.desc}>
             <p className={s.info}>{desc}</p>
             <div className={s.projectLinks}>
-              <p><a href={link_project} target="_blank">View Project</a></p>
-              <p><a href={link_source}  target="_blank">View Source Code</a></p>
+              {key !== 2 && 
+                <Fragment>
+                  <p><a href={link_project} target="_blank">View Project</a></p>
+                  <p><a href={link_source}  target="_blank">View Source Code</a></p>
+                </Fragment>
+              }
+              {key == 2 && 
+                <Fragment>
+                  <p><a href={link_project} target="_blank" className={s.disabled}>View Project (coming soon)</a></p>
+                  <p><a href={link_source}  target="_blank" className={s.disabled}>View Source Code (coming soon)</a></p>
+                </Fragment>
+              }
             </div>
           </div>
         </div>

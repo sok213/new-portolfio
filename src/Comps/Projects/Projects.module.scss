@@ -91,6 +91,10 @@
   }
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 .card {
   background-color: white;
   border: 8px solid white;
