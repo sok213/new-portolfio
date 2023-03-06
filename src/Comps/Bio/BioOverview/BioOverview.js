@@ -15,7 +15,7 @@ export default function BioOverview() {
   return (
     <div className={s.container}>
       <audio></audio>
-      <p className={s['default-p']}>Hey,</p>
+      <p className={s['default-p']}>Hi,</p>
       <h1 className={s.strongText}>
         I'm Sophanarith Sok.
       </h1>

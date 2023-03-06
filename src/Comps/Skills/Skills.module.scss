@@ -23,10 +23,12 @@
   width: 100%;
   margin: 20px;
   height: 520px;
-  border-radius: 20px;
-  background-color: #252E42;
-  -webkit-box-shadow: 3px 2px 14px -1px rgba(0,0,0,0.41); 
-  box-shadow: 3px 2px 14px -1px rgba(0,0,0,0.41);
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
   animation-delay: 0.2;
 
   &:nth-child(2) {
@@ -64,14 +66,14 @@
 }
 
 .listContainer {
-  list-style: none;
+  list-style: square;
   padding-left: 24px;
   margin-top: 45px;
 }
 
 .listContent {
   font-size: 20px;
-  color: white;
+  color: black;
 
   @media screen and (max-width: 499px) {
     font-size: 16px;

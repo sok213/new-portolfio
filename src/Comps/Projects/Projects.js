@@ -16,19 +16,19 @@ export default function Projects() {
       link_source: 'https://github.com/sok213/some-digital-agency',
       link_project: 'https://www.digitalagenciesbelike.com/',
       thumbnail: thumbnail_1,
-      top: '153px',
+      top: '190px',
       icon: faBuilding,
-      width: 240
+      width: 300
     },
     {
       title: 'HTML Emails',
-      desc: 'A collection of HTML emails that I developed using HTML and CSS, utilizing table elements to showcase my ability to build HTML emails properly. Also included is an article I wrote explaining the nature of HTML emails and why they are built the way they are.',
+      desc: 'A collection of HTML emails that I developed using HTML and CSS, utilizing table elements to showcase my ability to build HTML emails properly.',
       link_source: 'https://github.com/sok213/email-hub',
       link_project: 'https://sok213.github.io/email-hub/',
       thumbnail: thumbnail_2,
       icon: faEnvelope,
-      top: '163px',
-      width: 150
+      top: '201px',
+      width: 180
     },
     {
       title: 'NPM Package',
@@ -37,8 +37,8 @@ export default function Projects() {
       link_project: 'https://simple-react-accordion-2021.herokuapp.com/',
       thumbnail: thumbnail_3,
       icon: faCode,
-      top: '158px',
-      width: 200
+      top: '193px',
+      width: 190
     }    
   ];
 
@@ -62,10 +62,10 @@ export default function Projects() {
           key={key} 
           className={`${s.projectCardContainer} animate__animated animate__fadeIn`
         }>
+          <div className={s.header} style={{ width }} >
+            <h3>{title}</h3>
+          </div>
           <div className={s.card} style={{ backgroundImage: `url(${thumbnail})` }}>
-            <div className={s.header} style={{ width }} >
-              <h3>{title}</h3>
-            </div>
             <div className={s.icon} style={{top, left}}>
               <FontAwesomeIcon icon={icon} />
             </div>
@@ -73,10 +73,8 @@ export default function Projects() {
           <div className={s.desc}>
             <p className={s.info}>{desc}</p>
             <div className={s.projectLinks}>
-              <Fragment>
-                <p><a href={link_project} target="_blank">View Project</a></p>
-                <p><a href={link_source}  target="_blank">View Source Code</a></p>
-              </Fragment>
+              <p><a href={link_project} target="_blank">View Project</a></p>
+              <p><a href={link_source}  target="_blank">View Source Code</a></p>
             </div>
           </div>
         </div>

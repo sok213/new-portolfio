@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .container {
-  // border: thin solid blue;
   display: flex;
   flex-direction: column;
   align-self: center;
   padding: 0px 20px;
   padding-top: 20px;
-  height: 680px;
 
   @media screen and (max-width: 499px) {
     height: auto;

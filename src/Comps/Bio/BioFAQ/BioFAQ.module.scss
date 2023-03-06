@@ -22,7 +22,7 @@
 }
 
 .textContent {
-  color: #efcafa;
+  color: #9227b3;
   font-size: 18px;
   font-style: italic;
 
@@ -32,7 +32,7 @@
 }
 
 .textContent_Q {
-  color: #C6C0C0;
+  color: black;
   font-size: 18px;
   font-style: italic;
 
@@ -45,7 +45,7 @@
   margin-bottom: 0px;
   font-family: Verdana, sans-serif;
   letter-spacing: 1px;
-  color: #F2E14B;
+  color: #d80101;
 
   @media screen and (max-width: 499px) {
     text-align: center;
@@ -120,8 +120,9 @@
   margin-left: auto;
   margin-right: auto;
   padding: 5px 30px 25px 30px;
-  background: rgb(95,95,95);
-  background: linear-gradient(122deg, rgba(95,95,95,1) 0%, rgba(4,7,37,1) 100%);
+  border: 1px solid black;
+  // background: rgb(95,95,95);
+  // background: linear-gradient(122deg, rgba(95,95,95,1) 0%, rgba(4,7,37,1) 100%);
   box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.26);
 
   @media screen and (max-width: 499px) {
@@ -134,7 +135,7 @@
 
 .subText {
   font-size: 20px;
-  color: #C6C0C0;
+  color: black;
   margin-top: 10px;
 
   @media screen and (max-width: 499px) {
@@ -155,18 +156,18 @@
 .faqCTA {
   margin-top: 10px;
   background: none;
-  border: thin solid #707070;
+  border: 1px solid #707070;
   padding: 18px;
   width: 100%;
   text-align: left;
   border-radius: 15px;
   font-size: 18px;
-  color: white;
+  color: black;
   letter-spacing: 1.2px;
   cursor: pointer;
 
   &:hover {
-    border-color: white;
+    border-color: red;
   }
 
   @media screen and (max-width: 499px) {
@@ -176,7 +177,7 @@
 }
 
 .number {
-  color: #F2E14B;
+  color: #d80101;
   font-weight: bold;
   font-size: 20px;
 

@@ -11,12 +11,9 @@
 .active {
   height: 200px !important;
   display: block;
-  transition: 1s;
-  background-color: #363b68;
 
   .innerContainer {
     opacity: 1;
-    transition: 1s;
   }
 
   .listItem:nth-child(1) {
@@ -30,8 +27,6 @@
   list-style-type: none;
   padding: 0px 0px;
   height: 0px;
-  transition: height 0.3s;
-  background-color: #363b68;
 }
 
 .listItem {
@@ -40,18 +35,15 @@
 }
 
 .innerContainer {
-  opacity: 0;
-  transition: opacity 0.5s;
-  box-shadow: 1px 2px 42px -9px rgba(0,0,0,0.33) inset;
-  -webkit-box-shadow: 1px 2px 42px -9px rgba(0,0,0,0.33) inset;
-  -moz-box-shadow: 1px 2px 42px -9px rgba(0,0,0,0.33) inset;
+  // border-bottom: thin solid black;
 }
 
 .innerContainer a {
   display: block;
   position: relative;
   cursor: pointer;
-  color: #fff06b;
+  color: black;
+  font-weight: 700;
 
   &:hover {
     font-weight: bolder;
@@ -60,7 +52,7 @@
 
 .activeTab {
   font-weight: bolder;
-  color: white;
+  color: red !important;
 }
 
 .listItem {

@@ -8,9 +8,6 @@ export default function Bio() {
     <Fragment>
       <div className={`${s.container} animate__animated animate__fadeIn`}>
         <BioOverview />
-        <div className={s.testContainer}>
-          This is a fucking test.
-        </div>
       </div>
     </Fragment>
   );

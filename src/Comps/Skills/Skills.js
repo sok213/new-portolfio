@@ -107,7 +107,7 @@ export default function Skills() {
           <div className={s.headerCardContainer}>
             <h3><FontAwesomeIcon icon={icon} className={s.headerIcon} />{header}</h3>
           </div>
-          <ul className={s.listContainer}>
+          <ol className={s.listContainer}>
             {skillListItems.map((item, key) =>{
               return (
                 <li key={key}>
@@ -115,7 +115,7 @@ export default function Skills() {
                 </li>
               );
             })}
-          </ul>
+          </ol>
         </div>
       );
     });
