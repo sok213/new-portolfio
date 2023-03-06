@@ -17,7 +17,7 @@ function NavBar(props) {
     'Bio',
     'Skills',
     'Projects',
-    'Contact'
+    'QA'
   ];
 
   function toggleDropdown() {

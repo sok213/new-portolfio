@@ -11,14 +11,14 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Some Digital Agency',
+      title: 'Digital Agencies Be Like',
       desc: 'A satirical landing page that pokes fun at digital agencies. Project was built with React using Class components and Flexbox for responsive UI.',
       link_source: 'https://github.com/sok213/some-digital-agency',
-      link_project: 'https://www.somedigitalagency.com/',
+      link_project: 'https://www.digitalagenciesbelike.com/',
       thumbnail: thumbnail_1,
-      top: '154px',
+      top: '153px',
       icon: faBuilding,
-      width: 220
+      width: 240
     },
     {
       title: 'HTML Emails',
@@ -29,16 +29,6 @@ export default function Projects() {
       icon: faEnvelope,
       top: '163px',
       width: 150
-    },
-    {
-      title: 'Video Game (Coming Soon)',
-      desc: 'An epic Pokémon inspired RPG video game demo I developed using JavaScript in combination with the PhaserJS library. COMING SOON! ',
-      link_source: '#',
-      link_project: '#',
-      thumbnail: thumbnail_4,
-      icon: faGamepad,
-      top: '165px',
-      width: 270
     },
     {
       title: 'NPM Package',
@@ -83,18 +73,10 @@ export default function Projects() {
           <div className={s.desc}>
             <p className={s.info}>{desc}</p>
             <div className={s.projectLinks}>
-              {key !== 2 && 
-                <Fragment>
-                  <p><a href={link_project} target="_blank">View Project</a></p>
-                  <p><a href={link_source}  target="_blank">View Source Code</a></p>
-                </Fragment>
-              }
-              {key == 2 && 
-                <Fragment>
-                  <p><a href={link_project} target="_blank" className={s.disabled}>View Project (coming soon)</a></p>
-                  <p><a href={link_source}  target="_blank" className={s.disabled}>View Source Code (coming soon)</a></p>
-                </Fragment>
-              }
+              <Fragment>
+                <p><a href={link_project} target="_blank">View Project</a></p>
+                <p><a href={link_source}  target="_blank">View Source Code</a></p>
+              </Fragment>
             </div>
           </div>
         </div>

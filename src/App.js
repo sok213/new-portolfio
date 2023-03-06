@@ -25,7 +25,7 @@ function App() {
       return <Skills />
     } else if(activePage === 'Projects') {
       return <Projects />
-    } else if(activePage === 'Contact') {
+    } else if(activePage === 'QA') {
       return <Contact />
     }
   }
