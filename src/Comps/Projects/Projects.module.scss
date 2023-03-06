@@ -47,7 +47,8 @@
   border-radius: 10px;
   animation-delay: 0.2s;
   border: 1px solid black;
-
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
   box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
   -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
   -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
@@ -66,33 +67,15 @@
 
   @media screen and (max-width: 1200px) {
     max-width: 48%;
-    margin: 0;
   }
 
   @media screen and (max-width: 900px) {
     max-width: 80%;
     align-self: center;
-    margin-bottom: 40px;
   }
 
   @media screen and (max-width: 900px) {
     max-width: 100%;
-  }
-}
-
-.projectCardContainer:nth-child(4) {
-  margin-top: 40px;
-}
-
-.projectCardContainer:nth-child(3), 
-.projectCardContainer:nth-child(4) {
-
-  @media screen and (max-width: 1200px) {
-    margin-top: 40px;
-  }
-
-  @media screen and (max-width: 900px) {
-    margin-top: 0px;
   }
 }
 
@@ -131,23 +114,54 @@
   }
 }
 
+.button {
+  border: thin solid black;
+  padding: 10px 17px;
+  border-radius: 10px;
+}
+
 .projectLinks {
   padding-top: 10px;
-  
-  p {
-    line-height: 28px;
-    font-size: 18px;
-    font-weight: bold;
-    opacity: 0.75;
+  display: flex;
+  justify-content: space-around;
+  max-width: 320px;
+  margin: auto;
+  font-weight: bold;
+
+  a {
+    color: black;
+    text-decoration: none;
+    pointer-events: all;
+    opacity: 0.8;
 
     &:hover {
       opacity: 1;
     }
   }
+}
 
-  a {
-    color: black;
-    text-decoration: none;
+.button__info {
+  color: #fff !important;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #189bb0;
+    border-color: #189bb0;
+  }
+}
+
+.button__dark {
+  color: #fff !important;
+  background-color: #343a40;
+  border-color: #343a40;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #ffffff;
+    border-color: #343a40;
+    color: #343a40 !important;
   }
 }
 

@@ -13,7 +13,7 @@
 }
 
 .header, .mainHeader {
-  font-size: 30px;
+  font-size: 55px;
   color: white;
 }
 
@@ -23,7 +23,7 @@
 
 .textContent {
   color: #9227b3;
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
 
   @media screen and (max-width: 499px) {
@@ -33,7 +33,7 @@
 
 .textContent_Q {
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
 
   @media screen and (max-width: 499px) {
@@ -43,7 +43,7 @@
 
 .mainHeader {
   margin-bottom: 0px;
-  font-family: Verdana, sans-serif;
+  font-family: 'Staatliches', cursive;
   letter-spacing: 1px;
   color: #d80101;
 
@@ -55,7 +55,7 @@
 
 .subHeader {
   font-size: 24px;
-  color: white;
+  color: balck;
   margin-bottom: 0;
 
   @media screen and (max-width: 499px) {

@@ -11,34 +11,34 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Digital Agencies Be Like',
+      title: 'DIGITAL AGENCIES BE LIKE',
       desc: 'A satirical landing page that pokes fun at digital agencies. Project was built with React using Class components and Flexbox for responsive UI.',
       link_source: 'https://github.com/sok213/some-digital-agency',
       link_project: 'https://www.digitalagenciesbelike.com/',
       thumbnail: thumbnail_1,
       top: '190px',
       icon: faBuilding,
-      width: 300
+      width: 320
     },
     {
-      title: 'HTML Emails',
+      title: 'HTML EMAILS',
       desc: 'A collection of HTML emails that I developed using HTML and CSS, utilizing table elements to showcase my ability to build HTML emails properly.',
       link_source: 'https://github.com/sok213/email-hub',
       link_project: 'https://sok213.github.io/email-hub/',
       thumbnail: thumbnail_2,
       icon: faEnvelope,
       top: '201px',
-      width: 180
+      width: 190
     },
     {
-      title: 'NPM Package',
+      title: 'NPM PACKAGE',
       desc: 'A React component wrapped in an NPM package that takes in an array of objects as a prop and generates an accordion. It’s very easy to use and offers 5 pre-built in themes. ',
       link_source: 'https://github.com/sok213/simple-react-accordion',
       link_project: 'https://simple-react-accordion-2021.herokuapp.com/',
       thumbnail: thumbnail_3,
       icon: faCode,
       top: '193px',
-      width: 190
+      width: 200
     }    
   ];
 
@@ -73,8 +73,8 @@ export default function Projects() {
           <div className={s.desc}>
             <p className={s.info}>{desc}</p>
             <div className={s.projectLinks}>
-              <p><a href={link_project} target="_blank">View Project</a></p>
-              <p><a href={link_source}  target="_blank">View Source Code</a></p>
+              <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
+              <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a>
             </div>
           </div>
         </div>

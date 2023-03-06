@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   border-radius: 50px;
-  width: 500px;
+  width: 400px;
   flex-basis: auto;
   display: flex;
   flex-direction: row;
@@ -72,10 +72,10 @@
   color: black;
   border: none;
   padding: 10px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
   background: none;
   cursor: pointer;
+  font-family: 'Staatliches', cursive;
 }
 
 .activeLink {
