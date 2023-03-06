@@ -38,7 +38,7 @@ export default function Skills() {
       icon: faLightbulb,
       skillListItems: [
         '80WPM Typing Speed',
-        'Magento CMS',
+        'Admin dashboard experience with Wordpress, Pimcore, Concrete5, and Magento',
         'Video Editing/Adobe Premiere',
         'Intercom Customer Support',
         'Jira Software/Ticket Creation/Kanban Board management',
