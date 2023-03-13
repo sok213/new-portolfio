@@ -39,9 +39,8 @@ export default function Skills() {
       skillListItems: [
         '80WPM Typing Speed',
         'Admin dashboard experience with Wordpress, Pimcore, Concrete5, and Magento',
-        'Video Editing/Adobe Premiere',
         'Intercom Customer Support',
-        'Jira Software/Ticket Creation/Kanban Board management',
+        'Jira/ Accelo',
         'Writer/Content Creator',
         'Self Motivated',
         'Friendly'
