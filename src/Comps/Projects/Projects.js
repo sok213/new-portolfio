@@ -5,11 +5,21 @@ import { faGamepad, faBuilding, faEnvelope, faCode } from '@fortawesome/free-sol
 import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
 import thumbnail_2 from './../../Assets/mail.jpg';
 import thumbnail_3 from './../../Assets/npm.jpg';
-import thumbnail_4 from './../../Assets/pixels.jpg';
+import thumbnail_4 from './../../Assets/flyer.JPG'
 
 export default function Projects() {
 
   const projects = [
+    {
+      title: 'FlyingCowsAreReal',
+      desc: 'A community passion project designed as an outdoor objective based quest in which prizes were granted to those who finished.',
+      link_source: '#',
+      link_project: 'https://www.flyingcowsarereal.com/',
+      thumbnail: thumbnail_4,
+      icon: faCode,
+      top: '193px',
+      width: 250
+    },
     {
       title: 'DIGITAL AGENCIES BE LIKE',
       desc: 'A satirical landing page that pokes fun at digital agencies. Project was built with React using Class components and Flexbox for responsive UI.',
@@ -66,15 +76,19 @@ export default function Projects() {
             <h3>{title}</h3>
           </div>
           <div className={s.card} style={{ backgroundImage: `url(${thumbnail})` }}>
-            <div className={s.icon} style={{top, left}}>
+            {/* <div className={s.icon} style={{top, left}}>
               <FontAwesomeIcon icon={icon} />
-            </div>
+            </div> */}
           </div>
           <div className={s.desc}>
             <p className={s.info}>{desc}</p>
             <div className={s.projectLinks}>
               <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
-              <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a>
+              {key === 0 ?
+                <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>Video Overview</a>
+              : 
+                <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a>
+              }
             </div>
           </div>
         </div>

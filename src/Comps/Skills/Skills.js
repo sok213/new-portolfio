@@ -43,7 +43,8 @@ export default function Skills() {
         'Jira/ Accelo',
         'Writer/Content Creator',
         'Self Motivated',
-        'Friendly'
+        'Friendly',
+        'ChatGPT PLUS Prompt Expert'
       ]
     }
   ];
