@@ -12,7 +12,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'FlyingCowsAreReal',
-      desc: 'A community passion project designed as an outdoor objective based quest in which prizes were granted to those who finished.',
+      desc: 'A community passion project designed as an outdoor objective based quest in which prizes were granted to those who finished. Built on Node, React, and AWS.',
       link_source: '#',
       link_project: 'https://www.flyingcowsarereal.com/',
       thumbnail: thumbnail_4,
