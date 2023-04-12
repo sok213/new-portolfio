@@ -38,7 +38,7 @@ export default function BioFAQ() {
     },
     {
       q: 'What skill are you currently learning?',
-      a: 'I am currenlty focusing on taking my web design skills to the next level. The current web app you are looking at was designed in Adobe XD and I love the software so far. I would love to dive into Sketch since many companies are utilizing it and it looks fun to learn and design within it. However, it is only compatible with Mac and currently my macbook is dead so I am confined to Windows for now.'
+      a: 'I am very intrigued by VR and AR technology and I am currenlty interested in utilizing AR web APIs in some of my web projects. I believe that VR and AR technology will have a significant impact on the future of how we experience media and entertainment.'
     }
   ];
 
