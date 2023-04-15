@@ -1,17 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
-  width: 100%;
+  max-width: 800px;
+  width: auto;
   justify-content: center;
   align-self: center;
   min-height: 680px;
   height: 100%;
-  padding-top: 20px;
-}
-
-.testContainer {
-  border: thin solid blue;
+  padding: 20px 20px 0px 20px;
 }
 
 @media only screen and (max-width: 1400px) {

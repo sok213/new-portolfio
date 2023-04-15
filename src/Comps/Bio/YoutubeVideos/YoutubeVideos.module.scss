@@ -1,20 +1,7 @@
-.container {
-  flex-grow: 1;
-  flex-direction: column;
-  max-width: 800px;
+iframe {
   width: 100%;
-  margin: auto;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  iframe {
-    width: 100%;
-    min-height: 460px;
-    height: 100%;
-  }
+  min-height: 460px;
+  height: auto;
 }
 
 .header {
@@ -22,4 +9,12 @@
   font-family: 'Staatliches', cursive;
   font-weight: bolder;
   font-size: 40px;
+}
+
+.iFrameContainer {
+  display: flex;
+  flex-grow: 1;
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.20);
 }
