@@ -1,0 +1,25 @@
+.container {
+  flex-grow: 1;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  iframe {
+    width: 100%;
+    min-height: 460px;
+    height: 100%;
+  }
+}
+
+.header {
+  color: rgb(216, 1, 1);
+  font-family: 'Staatliches', cursive;
+  font-weight: bolder;
+  font-size: 40px;
+}
