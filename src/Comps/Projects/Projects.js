@@ -13,7 +13,7 @@ export default function Projects() {
     {
       title: 'FlyingCowsAreReal',
       desc: 'A community passion project designed as an outdoor objective based quest in which prizes were granted to those who finished. Built on Node, React, and AWS.',
-      link_source: '#',
+      link_source: 'https://youtu.be/-Ib5q8gdhLQ',
       link_project: 'https://www.flyingcowsarereal.com/',
       thumbnail: thumbnail_4,
       icon: faCode,
