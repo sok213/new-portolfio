@@ -4,6 +4,7 @@ import s from './BioFAQ.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStepBackward } from '@fortawesome/free-solid-svg-icons';
 import questionIcon from './../../../Assets/question_icon.png';
+import cow from './../../../Assets/cow.png';
 
 export default function BioFAQ() {
 
@@ -112,6 +113,9 @@ export default function BioFAQ() {
 
   return (
     <section className={s.container}>
+      <div className={s.cowContainer}>
+        <img className={`${s.cow} animate__animated animate__shakeY`} src={cow}></img>
+      </div>
       <div className={s.widget}>
         <div className={s.iconWrapper}>
           <img src={questionIcon} className={s.questionIcon}/>

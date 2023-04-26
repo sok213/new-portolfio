@@ -1,6 +1,7 @@
 .container {
   flex-grow: 1;
   padding: 15px;
+  padding-top: 0px;
 
   @media screen and (max-width: 499px) {
     padding: 0;
@@ -222,4 +223,14 @@
   .iconWrapper {
     display: none;
   }
+}
+
+.cowContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.cow {
+  max-height: 300px;
 }
