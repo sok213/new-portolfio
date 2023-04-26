@@ -31,7 +31,7 @@
 }
 
 .strongText {
-  color: rgb(216, 1, 1);
+  color: #606DFF;
   font-family: 'Staatliches', cursive;
   font-weight: bolder;
   font-size: 55px;
@@ -46,7 +46,7 @@
 
 .subtext {
   margin: -10px 0px 30px 0px;
-  color: red;
+  color: #606DFF;
   font-weight: normal;
   font-size: 30px;
 
@@ -68,3 +68,47 @@
     text-align: justify;
   }
 }
+
+.ufoImg {
+  max-height: 400px;
+  margin-top: -135px;
+  position: relative;
+  left: -210px;
+  margin-bottom: -180px;
+  z-index: 2;
+  animation: hover-animation 3s infinite alternate ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  .ufoImg {
+    margin-top: -15px;
+    left:30px;
+    max-height: 320px;
+  }
+
+  @keyframes hover-animation {
+    0% {
+      transform: translateY(0) rotate(25deg);
+    }
+    50% {
+      transform: translateY(-13px) rotate(25deg);
+    }
+    100% {
+      transform: translateY(0) rotate(25deg);
+    }
+  }
+}
+
+// @keyframes hover-animation {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(-13px);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
+
+
