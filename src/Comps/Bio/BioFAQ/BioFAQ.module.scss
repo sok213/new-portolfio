@@ -45,7 +45,7 @@
   margin-bottom: 0px;
   font-family: 'Staatliches', cursive;
   letter-spacing: 1px;
-  color: #d80101;
+  color: #606DFF;
 
   @media screen and (max-width: 499px) {
     text-align: center;
@@ -166,7 +166,7 @@
   cursor: pointer;
 
   &:hover {
-    border-color: red;
+    border-color: #606DFF;
   }
 
   @media screen and (max-width: 499px) {
@@ -176,7 +176,7 @@
 }
 
 .number {
-  color: #d80101;
+  color: #606DFF;
   font-weight: bold;
   font-size: 20px;
 

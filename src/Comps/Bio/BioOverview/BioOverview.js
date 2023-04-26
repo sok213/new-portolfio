@@ -3,6 +3,7 @@ import s from './BioOverview.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVolumeDown } from '@fortawesome/free-solid-svg-icons';
 import audio from '../../../Assets/soak.mp3';
+import ufo from '../../../Assets/ufo_2.png';
 
 export default function BioOverview() {
 
@@ -15,6 +16,9 @@ export default function BioOverview() {
   return (
     <div className={s.container}>
       <audio></audio>
+      <div className={`${s.ufoContainer} animate__animated animate__zoomInDown`}>
+        <img className={s.ufoImg} src={ufo}></img>
+      </div>
       <p className={s['default-p']}>Hi,</p>
       <h1 className={s.strongText}>
         I'm Sophanarith Sok.
