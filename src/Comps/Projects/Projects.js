@@ -33,7 +33,7 @@ export default function Projects() {
     },
     {
       title: 'Element 115 Whiskey Co.',
-      desc: 'A fictional alien whiskey website showcasing multiple responsive pages with dynamic animations',
+      desc: 'A fictional alien whiskey website showcasing multiple responsive pages with dynamic animations. Designed in Figma and built with Node, React, Flexbox, and Sass.',
       link_source: 'https://github.com/sok213/element115-whiskey/tree/master/src',
       link_project: 'https://element115whiskey.com/',
       thumbnail: thumbnail_5,
