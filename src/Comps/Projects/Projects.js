@@ -5,7 +5,8 @@ import { faGamepad, faBuilding, faEnvelope, faCode } from '@fortawesome/free-sol
 import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
 import thumbnail_2 from './../../Assets/mail.jpg';
 import thumbnail_3 from './../../Assets/npm.jpg';
-import thumbnail_4 from './../../Assets/flyer.JPG'
+import thumbnail_4 from './../../Assets/flyer.JPG';
+import thumbnail_5 from './../../Assets/element115_thumbnail.jpg';
 
 export default function Projects() {
 
@@ -26,6 +27,16 @@ export default function Projects() {
       link_source: 'https://github.com/sok213/some-digital-agency',
       link_project: 'https://www.digitalagenciesbelike.com/',
       thumbnail: thumbnail_1,
+      top: '190px',
+      icon: faBuilding,
+      width: 320
+    },
+    {
+      title: 'Element 115 Whiskey Co.',
+      desc: 'A fictional alien whiskey website showcasing multiple responsive pages with dynamic animations',
+      link_source: 'https://github.com/sok213/element115-whiskey/tree/master/src',
+      link_project: 'https://element115whiskey.com/',
+      thumbnail: thumbnail_5,
       top: '190px',
       icon: faBuilding,
       width: 320
