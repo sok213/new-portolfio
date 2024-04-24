@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 0px 20px;
   padding-top: 20px;
-  min-height: 680px;
+  // min-height: 680px;
 
   @media screen and (max-width: 499px) {
     padding: 0px;
@@ -25,6 +25,21 @@
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
+  }
+}
+
+.projectsSeparater {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  h3 {
+    color: #606DFF;
+    font-family: 'Staatliches', cursive;
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 20px;
   }
 }
 

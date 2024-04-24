@@ -12,13 +12,13 @@ export default function Skills() {
       icon: faLaptopCode, 
       skillListItems: [
         'JavaScript/jQuery/ES6',
+        'Shopify Theme Development',
         'Node',
         'ReactJS/MobX/Hooks/Redux',
         'Flexbox/Bootstrap',
         'GIT/Version Control',
-        'HTML Emails (using proper tables structure)',
-        'PSD to HTML Conversion',
-        'PHP'
+        'Terminal/CLI',
+        'HTML Emails (using proper tables structure)'
       ]
     },
     {
@@ -26,7 +26,8 @@ export default function Skills() {
       transitionAnimation: setAnimationClass(),
       icon: faDraftingCompass, 
       skillListItems: [
-        'Adobe XD/PhotoShop',
+        'Figma',
+        'Adobe XD',
         'Responsive/Mobile Design',
         'WireFraming',
         'Light Photo Editing'
@@ -39,7 +40,7 @@ export default function Skills() {
       skillListItems: [
         '80WPM Typing Speed',
         'Admin dashboard experience with Wordpress, Pimcore, Concrete5, and Magento',
-        'Intercom Customer Support',
+        'Customer Support/Customer Communication',
         'Jira/ Accelo',
         'Writer/Content Creator',
         'Self Motivated',

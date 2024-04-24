@@ -19,7 +19,7 @@ export default function BioFAQ() {
   const faqItems = [
     {
       q: "What's your favourite video game?",
-      a: 'My favourite casual game is Tetris because it’s a great game that I am able to just jump in and begin having fun within seconds. A more modern and recent game that I really enjoyed was Spider-man: Miles Morales on the PS4 because spiderman is an amazing super-hero and the game had great story and web swinging gameplay.'
+      a: 'My favourite casual game is Tetris because it’s a great game that I am able to just jump in and begin having fun within seconds.'
     },
     {
       q: "Which holiday do you look forward to the most?",
@@ -27,7 +27,7 @@ export default function BioFAQ() {
     },
     {
       q: 'What makes Web Development enjoyable to you?',
-      a: 'I like the idea of taking concepts either from myself or designers and seeing it come to life. Coding to me is fun and I have always had a fascination with art and design, so being able to create user experiences with the fun aspect of coding is what keeps my intriqued in this field.'
+      a: 'I like the idea of taking concepts either from myself or designers and seeing it come to life. Coding to me is fun and I have always had a fascination with art and design, so being able to create user experiences with the fun aspect of coding is what keeps me intriqued in this field.'
     },
     {
       q: 'If you could live anywhere, where would it be?',
@@ -39,7 +39,7 @@ export default function BioFAQ() {
     },
     {
       q: 'What skill are you currently learning?',
-      a: 'I am very intrigued by VR and AR technology and I am currently interested in utilizing AR web APIs in some of my web projects. I believe that VR and AR technology will have a significant impact on the future of how we experience media and entertainment.'
+      a: 'I am very intrigued by VR and AR technology and I am currently interested in utilizing AR web APIs in some of my web projects. I believe that VR and AR technology will have a significant impact on the future of how we experience media and entertainment. On top of that, with the recent developments within A.I, combinding these two things can lead to amazing tools.'
     }
   ];
 
