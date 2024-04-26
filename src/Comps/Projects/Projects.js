@@ -47,7 +47,7 @@ export default function Projects() {
   const workProjects = [
     {
       title: 'People of Leisure',
-      desc: 'A Shopify website. I was responsible for revamping the theme with improved grid styling, improved homepage layout, mobile optimization, and uploading and merching of product catalog.',
+      desc: 'A Shopify website in which I was involved in revamping the theme, improve mobile optimization, and uploading and merching of product catalog.',
       link_project: 'https://peopleofleisure.co/',
       thumbnail: thumbnail_2,
       icon: faEnvelope,
@@ -56,7 +56,7 @@ export default function Projects() {
     },
     {
       title: 'Teddy Headwear',
-      desc: 'A Shopify website that I helped launch from the ground up. I was responsible for adjusting theme and uploading and merching of product catalog, creating collections, writing and publishing blog posts, and creating all pages within the website.',
+      desc: 'A Shopify website that I helped launch from the ground up. I assisted with theme edits, navigation development, and catalog.',
       link_project: 'https://teddyheadwear.com/',
       thumbnail: thumbnail_3,
       icon: faCode,
@@ -65,7 +65,7 @@ export default function Projects() {
     },
     {
       title: 'Edgewisetx Clinical Trials Page',
-      desc: 'As a supporting developer, I built the clinical trials accordion component using jQuery and Bootstrap version 3.4 along with some custom CSS. Built within a legacy CMS framework.',
+      desc: 'As a supporting developer, I built the clinical trials accordion component using jQuery and Bootstrap version 3.4 along with some custom CSS.',
       link_project: 'https://edgewisetx.com/clinical-trials',
       thumbnail: thumbnail_6,
       icon: faCode,
