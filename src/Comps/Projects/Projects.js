@@ -20,7 +20,14 @@ export default function Projects() {
       thumbnail: thumbnail_4,
       icon: faCode,
       top: '193px',
-      width: 250
+      width: 250,
+      techStack: [
+        'Node',
+        'AWS',
+        'React',
+        'SQL',
+        'Twilio API'
+      ]
     },
     {
       title: 'DIGITAL AGENCIES BE LIKE',
@@ -30,7 +37,11 @@ export default function Projects() {
       thumbnail: thumbnail_1,
       top: '190px',
       icon: faBuilding,
-      width: 320
+      width: 320,
+      techStack: [
+        'React',
+        'Flexbox',
+      ]
     },
     {
       title: 'Element 115 Whiskey Co.',
@@ -40,7 +51,11 @@ export default function Projects() {
       thumbnail: thumbnail_5,
       top: '190px',
       icon: faBuilding,
-      width: 320
+      width: 320,
+      techStack: [
+        'React',
+        'Flexbox'
+      ]
     }  
   ];
 
@@ -52,7 +67,11 @@ export default function Projects() {
       thumbnail: thumbnail_2,
       icon: faEnvelope,
       top: '201px',
-      width: 250
+      width: 250,
+      techStack: [
+        'Shopify',
+        'HTML/CSS'
+      ]
     },
     {
       title: 'Teddy Headwear',
@@ -61,7 +80,11 @@ export default function Projects() {
       thumbnail: thumbnail_3,
       icon: faCode,
       top: '193px',
-      width: 220
+      width: 220,
+      techStack: [
+        'Shopify',
+        'HTML/CSS'
+      ]
     },
     {
       title: 'Edgewisetx Clinical Trials Page',
@@ -70,9 +93,25 @@ export default function Projects() {
       thumbnail: thumbnail_6,
       icon: faCode,
       top: '193px',
-      width: 370
+      width: 370,
+      techStack: [
+        'jQuery',
+        'JavaScript',
+        'HTML/CSS',
+        'Bootstrap'
+      ]
     }  
   ]
+
+  function renderTechTags(tags) {
+    return tags.map(tag => {
+      return(
+        <div className={s.tagItem}>
+          {tag}
+        </div>
+      )
+    });
+  }
 
   function renderPersonalProjects() {
 
@@ -86,7 +125,8 @@ export default function Projects() {
         left,
         thumbnail,
         link_source,
-        link_project
+        link_project,
+        techStack
       } = item;
 
       return (
@@ -104,6 +144,11 @@ export default function Projects() {
           </div>
           <div className={s.desc}>
             <p className={s.info}>{desc}</p>
+            <span className={s.boldMe}>Technology Stack:</span>
+            <div className={s.techStackTags}>
+              {renderTechTags(techStack)}
+            </div>
+            <span className={s.boldMe}>Project Links:</span>
             <div className={s.projectLinks}>
               <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
               {key === 0 ?
@@ -129,7 +174,8 @@ export default function Projects() {
         top,
         left,
         thumbnail,
-        link_project
+        link_project,
+        techStack
       } = item;
 
       return (
@@ -147,8 +193,19 @@ export default function Projects() {
           </div>
           <div className={s.desc}>
             <p className={s.info}>{desc}</p>
+            <span className={s.boldMe}>Technology Stack:</span>
+            <div className={s.techStackTags}>
+              {renderTechTags(techStack)}
+            </div>
+            <span className={s.boldMe}>Project Links:</span>
             <div className={s.projectLinks}>
-              <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
+              <a 
+                href={link_project} 
+                target="_blank" 
+                className={`${s.button} ${s.button__info}`}
+              >
+                View Project
+              </a>
             </div>
           </div>
         </div>

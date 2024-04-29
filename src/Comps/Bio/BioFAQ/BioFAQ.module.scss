@@ -20,6 +20,7 @@
 
 .mainHeader, .subHeader {
   font-family: Verdana, sans-serif;
+  text-align: center;
 }
 
 .textContent {
@@ -137,6 +138,7 @@
   font-size: 20px;
   color: black;
   margin-top: 10px;
+  text-align: center;
 
   @media screen and (max-width: 499px) {
     text-align: center;

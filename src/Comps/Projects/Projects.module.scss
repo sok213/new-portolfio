@@ -42,6 +42,28 @@
   }
 }
 
+.techStackTags {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+
+.boldMe {
+  font-weight: bold;
+  color: #434343;
+}
+
+.tagItem {
+  color: white;
+  background-color: rgb(252, 106, 43);
+  border-radius: 20px;
+  margin-right: 8px;
+  padding: 4px 14px 6px 14px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 .icon {
   color: white;
   font-size: 60px;
@@ -135,15 +157,13 @@
 .button {
   border: thin solid black;
   padding: 10px 17px;
-  border-radius: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .projectLinks {
   padding-top: 10px;
   display: flex;
-  justify-content: space-around;
-  max-width: 320px;
-  margin: auto;
   font-weight: bold;
 
   a {
@@ -160,8 +180,8 @@
 
 .button__info {
   color: #fff !important;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: #0093a9;
+  border-color: #0093a9;
   transition: 0.2s;
 
   &:hover {
@@ -194,7 +214,7 @@
   }
 
   .info {
-    height: 130px;
+    height: 120px;
     font-size: 18px;
 
     @media screen and (max-width: 900px) {
