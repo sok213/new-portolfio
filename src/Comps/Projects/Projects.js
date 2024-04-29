@@ -143,19 +143,24 @@ export default function Projects() {
             </div> */}
           </div>
           <div className={s.desc}>
-            <p className={s.info}>{desc}</p>
-            <span className={s.boldMe}>Technology Stack:</span>
-            <div className={s.techStackTags}>
-              {renderTechTags(techStack)}
+            <div className={s.infoContainer}>
+              <p className={s.info}>{desc}</p>
             </div>
-            <span className={s.boldMe}>Project Links:</span>
-            <div className={s.projectLinks}>
-              <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
-              {key === 0 ?
-                <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>Video Overview</a>
-              : 
-                <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a>
-              }
+
+            <div className={s.linksContainer}>
+              <span className={s.boldMe}>Technology Stack:</span>
+              <div className={s.techStackTags}>
+                {renderTechTags(techStack)}
+              </div>
+              <span className={s.boldMe}>Project Links:</span>
+              <div className={s.projectLinks}>
+                <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
+                {key === 0 ?
+                  <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>Video Overview</a>
+                : 
+                  <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a>
+                }
+              </div>
             </div>
           </div>
         </div>
@@ -192,7 +197,9 @@ export default function Projects() {
             </div> */}
           </div>
           <div className={s.desc}>
-            <p className={s.info}>{desc}</p>
+            <div className={s.infoContainer}>
+              <p className={s.info}>{desc}</p>
+            </div>
             <span className={s.boldMe}>Technology Stack:</span>
             <div className={s.techStackTags}>
               {renderTechTags(techStack)}
