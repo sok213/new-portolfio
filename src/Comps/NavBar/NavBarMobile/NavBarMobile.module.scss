@@ -1,24 +1,57 @@
 .container {
   background-color: rgb(255, 255, 255);
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 20px;
   
+
   @media screen and (min-width: 501px) {
     display: none !important;
   }
 }
 
 .active {
-  height: 200px !important;
-  display: block;
+  transition: 0.5s;
+  // display: block;
 
   .innerContainer {
     opacity: 1;
+    height: 200px;
+    z-index: 2;
   }
 
   .listItem:nth-child(1) {
-    padding-top: 23px;
+    padding-top: 35px;
   }
+
+  .listItem {
+    height: 20px;
+    padding: 7px 20px 7px 20px;
+    pointer-events: all;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .listContainer {
+    height: 190px;
+    z-index: 1;
+  }
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .listContainer {
@@ -27,15 +60,28 @@
   list-style-type: none;
   padding: 0px 0px;
   height: 0px;
+  transition: 0.5s;
+	animation-name: fadeInOpacity;
+  animation-timing-function: linear;
+	animation-duration: 0.1s;
 }
 
 .listItem {
-  padding: 7px 20px 7px 20px;
+  pointer-events: none;
+  display: relative;
+  padding: 0px;
   font-size: 20px;
+  text-align: center;
+  height: 0px;
+  transition: 0.3s;
+  opacity: 0;
 }
 
 .innerContainer {
-  // border-bottom: thin solid black;
+  position: relative;
+  // border: 2px solid red;
+  height: 0px;
+  transition: 0.5s;
 }
 
 .innerContainer a {

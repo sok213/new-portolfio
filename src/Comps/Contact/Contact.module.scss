@@ -5,6 +5,7 @@
   flex-direction: column;
   align-self: center;
   padding: 0px 20px;
+  min-height: 84vh;
 
   @media screen and (max-width: 499px) {
     height: auto;

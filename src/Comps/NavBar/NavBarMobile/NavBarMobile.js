@@ -18,10 +18,6 @@ export default function NavBarMobile(props) {
 
   function renderNavItem() {
 
-    if(!toggle) {
-      return;
-    }
-
     return links.map((link, key) => {
       return (
         <a 
@@ -37,7 +33,7 @@ export default function NavBarMobile(props) {
 
   return (
     <div 
-      className={`${s.container}`} 
+      className={`${s.container} ${ toggle && s.active }`} 
     >
       <li className={`${s.listContainer} ${ toggle && s.active }`}>
         <div className={`${s.innerContainer} ${ toggle && s.active }`}>
