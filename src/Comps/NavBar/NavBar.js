@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import s from './NavBar.module.scss';
 import NavBarMobile from './NavBarMobile/NavBarMobile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsisH, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar(props) {
 
@@ -64,7 +64,7 @@ function NavBar(props) {
     <nav className={`${s.container} ${navBarMobileToggle && s.active}`}>
       <div className={s.hamburgerMenuWrapper}>
         <button onClick={toggleDropdown}>
-          <FontAwesomeIcon icon={navBarMobileToggle ? faTimes : faBars} />
+          <FontAwesomeIcon icon={navBarMobileToggle ? faTimes : faEllipsisH} />
         </button>
       </div>
       <NavBarMobile 
