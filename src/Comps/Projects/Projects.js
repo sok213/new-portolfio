@@ -1,24 +1,37 @@
 import React, { Component, Fragment } from 'react';
 import s from './Projects.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGamepad, faBuilding, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons';
 import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
 import thumbnail_2 from './../../Assets/pol-thumbnail.jpg';
 import thumbnail_3 from './../../Assets/teddy-thumb.jpg';
 import thumbnail_4 from './../../Assets/flyer.JPG';
 import thumbnail_5 from './../../Assets/element115_thumbnail.jpg';
 import thumbnail_6 from './../../Assets/ewtx.jpg';
+import thumbnail_7 from './../../Assets/ss-thumbnail.jpg';
 
 export default function Projects() {
 
   const personalProjects = [
+    {
+      title: 'SalarySalmon',
+      desc: 'A lightweight fintech web app that quickly caculates the taxes and cost-of-living in a U.S state based on your salary.',
+      link_source: '',
+      link_project: 'https://salarysalmon.vercel.app/',
+      thumbnail: thumbnail_7,
+      top: '193px',
+      width: 250,
+      techStack: [
+        'NextJS',
+        'React',
+        'Typescript',
+        'TailwindCSS'
+      ]
+    },
     {
       title: 'FlyingCowsAreReal',
       desc: 'A community passion project designed as an outdoor objective based quest in which prizes were granted to those who finished. Built on Node, React, and AWS.',
       link_source: 'https://youtu.be/-Ib5q8gdhLQ',
       link_project: 'https://www.flyingcowsarereal.com/',
       thumbnail: thumbnail_4,
-      icon: faCode,
       top: '193px',
       width: 250,
       techStack: [
@@ -36,7 +49,6 @@ export default function Projects() {
       link_project: 'https://www.digitalagenciesbelike.com/',
       thumbnail: thumbnail_1,
       top: '190px',
-      icon: faBuilding,
       width: 320,
       techStack: [
         'React',
@@ -50,7 +62,6 @@ export default function Projects() {
       link_project: 'https://element115whiskey.com/',
       thumbnail: thumbnail_5,
       top: '190px',
-      icon: faBuilding,
       width: 320,
       techStack: [
         'React',
@@ -65,7 +76,6 @@ export default function Projects() {
       desc: 'A Shopify website in which I was involved in revamping the theme, improve mobile optimization, and uploading and merching of product catalog.',
       link_project: 'https://peopleofleisure.co/',
       thumbnail: thumbnail_2,
-      icon: faEnvelope,
       top: '201px',
       width: 250,
       techStack: [
@@ -78,7 +88,6 @@ export default function Projects() {
       desc: 'A Shopify website that I helped launch from the ground up. I assisted with theme edits, navigation development, and catalog.',
       link_project: 'https://teddyheadwear.com/',
       thumbnail: thumbnail_3,
-      icon: faCode,
       top: '193px',
       width: 220,
       techStack: [
@@ -91,7 +100,6 @@ export default function Projects() {
       desc: 'As a supporting developer, I built the clinical trials accordion component using jQuery and Bootstrap version 3.4 along with some custom CSS.',
       link_project: 'https://edgewisetx.com/clinical-trials',
       thumbnail: thumbnail_6,
-      icon: faCode,
       top: '193px',
       width: 370,
       techStack: [
@@ -120,9 +128,6 @@ export default function Projects() {
         title,
         desc,
         width,
-        icon,
-        top,
-        left,
         thumbnail,
         link_source,
         link_project,
@@ -138,9 +143,6 @@ export default function Projects() {
             <h3>{title}</h3>
           </div>
           <div className={s.card} style={{ backgroundImage: `url(${thumbnail})` }}>
-            {/* <div className={s.icon} style={{top, left}}>
-              <FontAwesomeIcon icon={icon} />
-            </div> */}
           </div>
           <div className={s.desc}>
             <div className={s.infoContainer}>
@@ -155,10 +157,13 @@ export default function Projects() {
               <span className={s.boldMe}>Project Links:</span>
               <div className={s.projectLinks}>
                 <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
-                {key === 0 ?
+                {key === 1 &&
                   <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>Video Overview</a>
-                : 
-                  <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a>
+                }
+
+                {
+                  key > 1 && 
+                  <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a> 
                 }
               </div>
             </div>
