@@ -26,22 +26,22 @@ export default function Projects() {
         'TailwindCSS'
       ]
     },
-    {
-      title: 'FlyingCowsAreReal',
-      desc: 'A community passion project designed as an outdoor objective based quest in which prizes were granted to those who finished. Built on Node, React, and AWS.',
-      link_source: 'https://youtu.be/-Ib5q8gdhLQ',
-      link_project: 'https://www.flyingcowsarereal.com/',
-      thumbnail: thumbnail_4,
-      top: '193px',
-      width: 250,
-      techStack: [
-        'Node',
-        'AWS',
-        'React',
-        'SQL',
-        'Twilio API'
-      ]
-    },
+    // {
+    //   title: 'FlyingCowsAreReal',
+    //   desc: 'A community passion project designed as an outdoor objective based quest in which prizes were granted to those who finished. Built on Node, React, and AWS.',
+    //   link_source: 'https://youtu.be/-Ib5q8gdhLQ',
+    //   link_project: 'https://www.flyingcowsarereal.com/',
+    //   thumbnail: thumbnail_4,
+    //   top: '193px',
+    //   width: 250,
+    //   techStack: [
+    //     'Node',
+    //     'AWS',
+    //     'React',
+    //     'SQL',
+    //     'Twilio API'
+    //   ]
+    // },
     {
       title: 'DIGITAL AGENCIES BE LIKE',
       desc: 'A satirical landing page that pokes fun at digital agencies. Project was built with React using Class components and Flexbox for responsive UI.',
@@ -197,9 +197,6 @@ export default function Projects() {
             <h3>{title}</h3>
           </div>
           <div className={s.card} style={{ backgroundImage: `url(${thumbnail})` }}>
-            {/* <div className={s.icon} style={{top, left}}>
-              <FontAwesomeIcon icon={icon} />
-            </div> */}
           </div>
           <div className={s.desc}>
             <div className={s.infoContainer}>
