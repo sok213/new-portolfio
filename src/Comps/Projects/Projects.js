@@ -94,21 +94,7 @@ export default function Projects() {
         'Shopify',
         'HTML/CSS'
       ]
-    },
-    {
-      title: 'Edgewisetx Clinical Trials Page',
-      desc: 'As a supporting developer, I built the clinical trials accordion component using jQuery and Bootstrap version 3.4 along with some custom CSS.',
-      link_project: 'https://edgewisetx.com/clinical-trials',
-      thumbnail: thumbnail_6,
-      top: '193px',
-      width: 370,
-      techStack: [
-        'jQuery',
-        'JavaScript',
-        'HTML/CSS',
-        'Bootstrap'
-      ]
-    }  
+    }
   ]
 
   function renderTechTags(tags) {
