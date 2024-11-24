@@ -3,7 +3,7 @@ import s from './Projects.module.scss';
 import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
 import thumbnail_2 from './../../Assets/pol-thumbnail.jpg';
 import thumbnail_3 from './../../Assets/teddy-thumb.jpg';
-import thumbnail_4 from './../../Assets/flyer.JPG';
+import thumbnail_4 from './../../Assets/scamai.jpg';
 import thumbnail_5 from './../../Assets/element115_thumbnail.jpg';
 import thumbnail_6 from './../../Assets/ewtx.jpg';
 import thumbnail_7 from './../../Assets/ss-thumbnail.jpg';
@@ -26,24 +26,22 @@ export default function Projects() {
         'TailwindCSS'
       ]
     },
-    // {
-    //   title: 'FlyingCowsAreReal',
-    //   desc: 'A community passion project designed as an outdoor objective based quest in which prizes were granted to those who finished. Built on Node, React, and AWS.',
-    //   link_source: 'https://youtu.be/-Ib5q8gdhLQ',
-    //   link_project: 'https://www.flyingcowsarereal.com/',
-    //   thumbnail: thumbnail_4,
-    //   top: '193px',
-    //   width: 250,
-    //   techStack: [
-    //     'Node',
-    //     'AWS',
-    //     'React',
-    //     'SQL',
-    //     'Twilio API'
-    //   ]
-    // },
     {
-      title: 'DIGITAL AGENCIES BE LIKE',
+      title: 'ScamAi',
+      desc: 'A parody landing page of a modern A.I focused startup company that strives to be an advanced SAAS tool for scamming people.',
+      link_source: 'https://github.com/sok213/ScamAI/tree/master',
+      link_project: 'https://scam-ai-szaq.vercel.app/',
+      thumbnail: thumbnail_4,
+      top: '193px',
+      width: 150,
+      techStack: [
+        'Astro Framework',
+        'TailwindCSS',
+        'JavaScript'
+      ]
+    },
+    {
+      title: 'Some Digital Agency',
       desc: 'A satirical landing page that pokes fun at digital agencies. Project was built with React using Class components and Flexbox for responsive UI.',
       link_source: 'https://github.com/sok213/some-digital-agency',
       link_project: 'https://www.digitalagenciesbelike.com/',
@@ -143,12 +141,8 @@ export default function Projects() {
               <span className={s.boldMe}>Project Links:</span>
               <div className={s.projectLinks}>
                 <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
-                {key === 1 &&
-                  <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>Video Overview</a>
-                }
-
                 {
-                  key > 1 && 
+                  key > 0 && 
                   <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a> 
                 }
               </div>
