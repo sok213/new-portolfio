@@ -11,12 +11,13 @@ export default function Skills() {
       transitionAnimation: 'fadeInLeft',
       icon: faLaptopCode, 
       skillListItems: [
-        'JavaScript/jQuery/ES6',
+        'JavaScript/jQuery/ES7',
+        'TypeScript',
         'Shopify Theme Development',
-        'Node',
-        'ReactJS/MobX/Hooks/Redux',
-        'Flexbox/Bootstrap',
-        'GIT/Version Control',
+        'ReactJS, NextJS, Astro',
+        'HTML/CSS',
+        'Flexbox/Bootstrap/Grid',
+        'Git/Version Control',
         'Terminal/CLI',
         'HTML Emails (using proper tables structure)'
       ]
