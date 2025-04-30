@@ -8,11 +8,6 @@ import cow from './../../../Assets/cow.png';
 
 export default function BioFAQ() {
 
-  // TODO:
-  // Define questions items
-  // render items linked to answer pages.
-  // perhaps make is an object state.
-
   const [revealAnswer, setRevealAnswer] = useState(false);
   const [activeFAQ, setActiveFAQ] = useState(false);
 

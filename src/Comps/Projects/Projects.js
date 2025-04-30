@@ -1,16 +1,31 @@
 import React, { Component, Fragment } from 'react';
 import s from './Projects.module.scss';
 import thumbnail_1 from './../../Assets/thumbnail_1.jpg';
-import thumbnail_2 from './../../Assets/pol-thumbnail.jpg';
-import thumbnail_3 from './../../Assets/teddy-thumb.jpg';
+// import thumbnail_2 from './../../Assets/pol-thumbnail.jpg';
+// import thumbnail_3 from './../../Assets/teddy-thumb.jpg';
 import thumbnail_4 from './../../Assets/scamai.jpg';
 import thumbnail_5 from './../../Assets/element115_thumbnail.jpg';
-import thumbnail_6 from './../../Assets/ewtx.jpg';
+import thumbnail_8 from './../../Assets/thumbnail_8.jpg';
 import thumbnail_7 from './../../Assets/ss-thumbnail.jpg';
 
 export default function Projects() {
 
   const personalProjects = [
+    {
+      title: 'Shopify Countdown App',
+      desc: 'A fully customizable countdown-banner widget that Shopify merchants install in seconds to drive flash-sale conversions.',
+      link_source: '',
+      link_project: 'https://apps.shopify.com/supreme-countdown-hero-banner',
+      thumbnail: thumbnail_8,
+      top: '193px',
+      width: 300,
+      techStack: [
+        'Shopify Liquid',
+        'HTML/CSS',
+        'JavaScript',
+        'GraphQL'
+      ]
+    },
     {
       title: 'SalarySalmon',
       desc: 'A lightweight fintech web app that quickly caculates the taxes and cost-of-living in a U.S state based on your salary.',
@@ -68,32 +83,32 @@ export default function Projects() {
     }  
   ];
 
-  const workProjects = [
-    {
-      title: 'People of Leisure',
-      desc: 'A Shopify website in which I was involved in revamping the theme, improve mobile optimization, and uploading and merching of product catalog.',
-      link_project: 'https://peopleofleisure.co/',
-      thumbnail: thumbnail_2,
-      top: '201px',
-      width: 250,
-      techStack: [
-        'Shopify',
-        'HTML/CSS'
-      ]
-    },
-    {
-      title: 'Teddy Headwear',
-      desc: 'A Shopify website that I helped launch from the ground up. I assisted with theme edits, navigation development, and catalog.',
-      link_project: 'https://teddyheadwear.com/',
-      thumbnail: thumbnail_3,
-      top: '193px',
-      width: 220,
-      techStack: [
-        'Shopify',
-        'HTML/CSS'
-      ]
-    }
-  ]
+  // const workProjects = [
+  //   {
+  //     title: 'People of Leisure',
+  //     desc: 'A Shopify website in which I was involved in revamping the theme, improve mobile optimization, and uploading and merching of product catalog.',
+  //     link_project: 'https://peopleofleisure.co/',
+  //     thumbnail: thumbnail_2,
+  //     top: '201px',
+  //     width: 250,
+  //     techStack: [
+  //       'Shopify',
+  //       'HTML/CSS'
+  //     ]
+  //   },
+  //   {
+  //     title: 'Teddy Headwear',
+  //     desc: 'A Shopify website that I helped launch from the ground up. I assisted with theme edits, navigation development, and catalog.',
+  //     link_project: 'https://teddyheadwear.com/',
+  //     thumbnail: thumbnail_3,
+  //     top: '193px',
+  //     width: 220,
+  //     techStack: [
+  //       'Shopify',
+  //       'HTML/CSS'
+  //     ]
+  //   }
+  // ]
 
   function renderTechTags(tags) {
     return tags.map(tag => {
@@ -142,7 +157,7 @@ export default function Projects() {
               <div className={s.projectLinks}>
                 <a href={link_project} target="_blank" className={`${s.button} ${s.button__info}`}>View Project</a>
                 {
-                  key > 0 && 
+                  key > 1 && 
                   <a href={link_source}  target="_blank" className={`${s.button} ${s.button__dark}`}>View Source Code</a> 
                 }
               </div>
@@ -153,54 +168,54 @@ export default function Projects() {
     });
   }
 
-  function renderWorkProjects() {
+  // function renderWorkProjects() {
 
-    return workProjects.map((item, key) => {
-      const {
-        title,
-        desc,
-        width,
-        icon,
-        top,
-        left,
-        thumbnail,
-        link_project,
-        techStack
-      } = item;
+  //   return workProjects.map((item, key) => {
+  //     const {
+  //       title,
+  //       desc,
+  //       width,
+  //       icon,
+  //       top,
+  //       left,
+  //       thumbnail,
+  //       link_project,
+  //       techStack
+  //     } = item;
 
-      return (
-        <div 
-          key={key} 
-          className={`${s.projectCardContainer} animate__animated animate__fadeIn`
-        }>
-          <div className={s.header} style={{ width }} >
-            <h3>{title}</h3>
-          </div>
-          <div className={s.card} style={{ backgroundImage: `url(${thumbnail})` }}>
-          </div>
-          <div className={s.desc}>
-            <div className={s.infoContainer}>
-              <p className={s.info}>{desc}</p>
-            </div>
-            <span className={s.boldMe}>Technology Stack:</span>
-            <div className={s.techStackTags}>
-              {renderTechTags(techStack)}
-            </div>
-            <span className={s.boldMe}>Project Links:</span>
-            <div className={s.projectLinks}>
-              <a 
-                href={link_project} 
-                target="_blank" 
-                className={`${s.button} ${s.button__info}`}
-              >
-                View Project
-              </a>
-            </div>
-          </div>
-        </div>
-      );
-    });
-  }
+  //     return (
+  //       <div 
+  //         key={key} 
+  //         className={`${s.projectCardContainer} animate__animated animate__fadeIn`
+  //       }>
+  //         <div className={s.header} style={{ width }} >
+  //           <h3>{title}</h3>
+  //         </div>
+  //         <div className={s.card} style={{ backgroundImage: `url(${thumbnail})` }}>
+  //         </div>
+  //         <div className={s.desc}>
+  //           <div className={s.infoContainer}>
+  //             <p className={s.info}>{desc}</p>
+  //           </div>
+  //           <span className={s.boldMe}>Technology Stack:</span>
+  //           <div className={s.techStackTags}>
+  //             {renderTechTags(techStack)}
+  //           </div>
+  //           <span className={s.boldMe}>Project Links:</span>
+  //           <div className={s.projectLinks}>
+  //             <a 
+  //               href={link_project} 
+  //               target="_blank" 
+  //               className={`${s.button} ${s.button__info}`}
+  //             >
+  //               View Project
+  //             </a>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     );
+  //   });
+  // }
 
   return (
     <Fragment>
@@ -212,14 +227,14 @@ export default function Projects() {
           {renderPersonalProjects()}
         </div>
       </div>
-      <div className={`${s.projectsSeparater} animate__animated animate__fadeIn`}>
+      {/* <div className={`${s.projectsSeparater} animate__animated animate__fadeIn`}>
         <h3>REAL WORK PROJECTS</h3>
       </div>
       <div className={s.container}>
         <div className={s.projectsContainer}>
           {renderWorkProjects()}
         </div>
-      </div>
+      </div> */}
     </Fragment>
   );
 }

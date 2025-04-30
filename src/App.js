@@ -11,7 +11,6 @@ import Skills from './Comps/Skills/Skills';
 import Footer from './Comps/Footer/Footer';
 
 function App() {
-
   console.log('Hey, stop peaking in here.')
 
   // Define state for active tab. Display page contents depending on

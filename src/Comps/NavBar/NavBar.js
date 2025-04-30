@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar(props) {
-
   const [navBarMobileToggle, setNavBarMobileToggle] = useState(false);
 
   const {
