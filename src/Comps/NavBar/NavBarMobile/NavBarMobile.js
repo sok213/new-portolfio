@@ -1,32 +1,33 @@
-import React, { useState, Fragment } from 'react';
+import React from 'react';
 import s from './NavBarMobile.module.scss';
+import { NavLink } from 'react-router-dom';
 
 export default function NavBarMobile(props) {
 
   const {
     toggle,
     links,
-    setActivePage,
-    activePage
   } = props;
 
-  function detectActiveTab(currentLink) {
-    if(currentLink === activePage) {
-      return s.activeTab;
-    }
+  function toPath(label) {
+    const lower = label.toLowerCase();
+    if (lower === 'bio') return '/bio';
+    if (lower === 'skills') return '/skills';
+    if (lower === 'projects') return '/projects';
+    if (lower === 'qa') return '/qa';
+    return '/';
   }
 
   function renderNavItem() {
-
     return links.map((link, key) => {
       return (
-        <a 
-          key={key} 
-          className={`${s.listItem} ${detectActiveTab(link)}`} 
-          onClick={setActivePage.bind(null, link)}
+        <NavLink 
+          key={key}
+          to={toPath(link)}
+          className={({ isActive }) => `${s.listItem} ${isActive ? s.activeTab : ''}`}
         >
           {link}
-        </a>
+        </NavLink>
       );
     });
   }

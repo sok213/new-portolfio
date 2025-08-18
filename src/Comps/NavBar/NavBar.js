@@ -3,13 +3,12 @@ import s from './NavBar.module.scss';
 import NavBarMobile from './NavBarMobile/NavBarMobile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 function NavBar(props) {
   const [navBarMobileToggle, setNavBarMobileToggle] = useState(false);
 
   const {
-    setActivePage,
-    activePage
   } = props;
 
   const links = [
@@ -28,32 +27,26 @@ function NavBar(props) {
     }
   }
 
+  function toPath(label) {
+    const lower = label.toLowerCase();
+    if (lower === 'bio') return '/bio';
+    if (lower === 'skills') return '/skills';
+    if (lower === 'projects') return '/projects';
+    if (lower === 'qa') return '/qa';
+    return '/';
+  }
+
   function renderNavLinks() {
-
     return links.map((link, key) => {
-      if(activePage === link) {
-        return (
-          <li key={key}>
-            <button 
-              className={[`
-                ${s.buttonItem} ${s.activeLink}
-              `]}
-              onClick={setActivePage.bind(null, link)}  
-            >
-              {link}
-            </button>
-          </li>
-        ) 
-      }
-
       return (
         <li key={key}>
-          <button 
-            className={s.buttonItem}
-            onClick={setActivePage.bind(null, link)}
+          <NavLink
+            to={toPath(link)}
+            className={({ isActive }) => `${s.buttonItem} ${isActive ? s.activeLink : ''}`}
+            onClick={() => setNavBarMobileToggle(false)}
           >
             {link}
-          </button>
+          </NavLink>
         </li>
       );
     });
@@ -69,8 +62,6 @@ function NavBar(props) {
       <NavBarMobile 
         toggle={navBarMobileToggle} 
         links={links} 
-        setActivePage={setActivePage}
-        activePage={activePage}        
       />
       <ul className={s['navbar-ul']}>
         {renderNavLinks()}
