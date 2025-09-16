@@ -34,7 +34,7 @@ export default function BioFAQ() {
     },
     {
       q: 'What skill are you currently learning?',
-      a: 'I am very intrigued by VR and AR technology and I am currently interested in utilizing AR web APIs in some of my web projects. I believe that VR and AR technology will have a significant impact on the future of how we experience media and entertainment. On top of that, with the recent developments within A.I, combinding these two things can lead to amazing tools.'
+      a: 'With the current advancements in Artificial Intelligence, it is essential to learn how to leverage generative A.I to put forth the best quality of work. I am always experimenting with pushing the boundaries of what I can build with A.I and identifying ways to utilize it so that I can be the best developer I can be.'
     }
   ];
 

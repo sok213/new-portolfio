@@ -19,7 +19,7 @@ export default function Skills() {
         'Flexbox/Bootstrap/Grid',
         'Git/Version Control',
         'Terminal/CLI',
-        'HTML Emails (using proper tables structure)'
+        'HTML Emails'
       ]
     },
     {
@@ -27,8 +27,7 @@ export default function Skills() {
       transitionAnimation: setAnimationClass(),
       icon: faDraftingCompass, 
       skillListItems: [
-        'Figma',
-        'Adobe XD',
+        'Figma, Canva',
         'Responsive/Mobile Design',
         'WireFraming',
         'Light Photo Editing'
@@ -40,13 +39,13 @@ export default function Skills() {
       icon: faLightbulb,
       skillListItems: [
         '80WPM Typing Speed',
-        'Admin dashboard experience with Wordpress, Pimcore, Concrete5, and Magento',
+        'CMS experience in Shopify, Wordpress, Squarespace, and Magento.',
         'Customer Support/Customer Communication',
-        'Jira/ Accelo',
+        'Jira/Accelo/Trello',
         'Writer/Content Creator',
         'Self Motivated',
         'Friendly',
-        'ChatGPT PLUS Prompt Expert'
+        'Prompt Engineering Experience'
       ]
     }
   ];
